@@ -1,0 +1,215 @@
+/* ===== Fix mobile layout ===== */
+
+*{
+box-sizing:border-box;
+}
+
+body{
+margin:0;
+padding:0;
+overflow-x:hidden;
+}
+
+/* ===== container ===== */
+
+.container{
+width:100%;
+max-width:1200px;
+margin:auto;
+padding:10px;
+}
+
+/* ===== image fix ===== */
+
+img{
+max-width:100%;
+height:auto;
+}
+
+/* ===== search box ===== */
+
+.search-box{
+display:flex;
+flex-direction:column;
+align-items:center;
+gap:10px;
+}
+
+.search-box input{
+width:90%;
+padding:10px;
+border-radius:20px;
+}
+
+.search-box button{
+width:60%;
+padding:10px;
+}
+
+/* ===== banner ===== */
+
+.banner img{
+width:100%;
+height:auto;
+border-radius:10px;
+}
+
+/* ===== product grid ===== */
+
+.product-list{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(200px,1fr));
+gap:15px;
+}
+
+/* ===== product card ===== */
+
+.product{
+width:100%;
+}
+
+/* ===== menu ===== */
+
+.menu{
+width:100%;
+padding:10px;
+}
+
+.menu li{
+padding:8px;
+font-size:14px;
+}
+
+/* ===== Tablet ===== */
+
+@media (max-width:1024px){
+
+.product-list{
+grid-template-columns:repeat(2,1fr);
+}
+
+}
+
+/* ===== Mobile ===== */
+
+@media (max-width:768px){
+
+.header{
+flex-direction:column;
+align-items:center;
+}
+
+.product-list{
+grid-template-columns:1fr;
+}
+
+.search-box input{
+width:95%;
+}
+
+.search-box button{
+width:80%;
+}
+
+}
+
+/* ===== Small phone ===== */
+
+@media (max-width:480px){
+
+body{
+font-size:14px;
+}
+
+.menu li{
+font-size:13px;
+}
+
+}
+
+/* ===== Fix menu mobile ===== */
+
+@media (max-width:768px){
+
+/* menu sidebar */
+.menu{
+max-height:220px;
+overflow-y:auto;
+}
+
+/* giảm padding menu */
+.menu li{
+padding:6px;
+font-size:14px;
+}
+
+/* giảm khoảng cách */
+.menu-container{
+padding:10px;
+}
+
+/* logo */
+.logo{
+font-size:18px;
+}
+
+}
+
+/* FIX MENU MOBILE */
+
+@media (max-width:768px){
+
+.nav-menu{
+height:auto !important;
+min-height:auto !important;
+position:relative !important;
+flex-direction:column;
+padding:10px;
+}
+
+.nav-item{
+margin:5px 0;
+}
+
+header{
+height:auto;
+}
+
+}
+
+@media (max-width:768px){
+
+.header-content{
+display:flex;
+flex-direction:column;
+align-items:center;
+}
+
+}
+
+.banner{
+margin-top:10px;
+}
+
+@media (max-width:768px){
+
+header{
+position:relative !important;
+}
+
+.main-header{
+position:relative !important;
+}
+
+}
+
+@media (max-width:768px){
+
+.decoration-top-left,
+.decoration-top-right,
+.decoration-bottom-left,
+.decoration-bottom-right{
+    position:absolute;
+}
+
+}
