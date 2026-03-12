@@ -1085,4 +1085,38 @@ footer {
   .slide-content p {
     font-size: 16px;
   }
+}@media (max-width: 768px) {
+
+nav{
+flex-direction: column;
+}
+
+.menu{
+flex-direction: column;
+}
+
+.search-box{
+width: 90%;
+margin: auto;
+}
+
+.banner img{
+width: 100%;
+height: auto;
+}
+
+.product-grid{
+grid-template-columns: repeat(2,1fr);
+gap:10px;
+}
+
+}
+
+img{
+max-width:100%;
+height:auto;
+}
+
+body{
+overflow-x:hidden;
 }
