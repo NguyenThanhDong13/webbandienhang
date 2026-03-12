@@ -1,0 +1,1111 @@
+<!DOCTYPE html>
+<html lang="vi">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Quần Áo</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+    <link rel="stylesheet" href="css/styles.css" />
+    <link rel="stylesheet" href="css/quanao.css" />
+  </head>
+  <body>
+    <!-- Họa tiết trang trí -->
+    <div class="decoration-top-left"></div>
+    <div class="decoration-top-right"></div>
+    <div class="decoration-bottom-left"></div>
+    <div class="decoration-bottom-right"></div>
+
+    <!-- Header -->
+    <header>
+      <div class="main-header">
+        <div class="container">
+          <div class="header-content">
+            <a href="index.html" class="logo">
+              <i class="fas fa-microchip"></i>
+              KDB
+            </a>
+
+            <nav>
+              <ul class="nav-menu">
+                <li class="nav-item">
+                  <a href="index.html" class="nav-link"
+                    ><i class="fas fa-home"></i> Trang chủ</a
+                  >
+                </li>
+                <li class="nav-item">
+                  <a href="dienthoai.html" class="nav-link"
+                    ><i class="fa-solid fa-phone"></i>Điện Thoại</a
+                  >
+                </li>
+                <li class="nav-item">
+                  <a href="laptop.html" class="nav-link"
+                    ><i class="fa-solid fa-laptop"></i>Laptop</a
+                  >
+                </li>
+                <li class="nav-item">
+                  <a href="quanao.html" class="nav-link active"
+                    ><i class="fa-solid fa-shirt"></i>Quần áo</a
+                  >
+                </li>
+                <li class="nav-item">
+                  <a href="sach.html" class="nav-link"
+                    ><i class="fa-solid fa-book"></i>Sách</a
+                  >
+                </li>
+                <li class="nav-item">
+                  <a href="hangnong.html" class="nav-link"
+                    ><i class="fa-solid fa-gun"></i>Hàng Nóng</a
+                  >
+                </li>
+                <li class="nav-item">
+                  <a href="contact.html" class="nav-link"
+                    ><i class="fa-solid fa-comment-dots"></i> Liên hệ</a
+                  >
+                </li>
+              </ul>
+            </nav>
+
+            <div class="header-actions">
+              <div class="auth-links">
+                <a href="login.html" id="login-link"
+                  ><i class="fas fa-user"></i> Đăng nhập</a
+                >
+                <a href="register.html" id="register-link"
+                  ><i class="fas fa-user-plus"></i> Đăng ký</a
+                >
+                <a href="#" id="logout-link" style="display: none"
+                  ><i class="fas fa-sign-out-alt"></i> Đăng xuất</a
+                >
+              </div>
+              <div class="header-action">
+                <i class="fas fa-heart"></i>
+              </div>
+              <div class="header-action">
+                <i class="fas fa-shopping-cart"></i>
+                <span class="cart-count">0</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Search Section -->
+      <div class="search-section">
+        <div class="container">
+          <div class="search-container">
+            <div class="search-box">
+              <i class="fas fa-search search-icon"></i>
+              <input
+                type="text"
+                class="search-input"
+                placeholder="Tìm kiếm quần áo, giày dép, từ khóa..."
+              />
+            </div>
+            <button class="search-btn">
+              <i class="fas fa-search"></i> Tìm kiếm
+            </button>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <!-- Main Content -->
+    <main class="products-page">
+      <div class="container">
+        <!-- Page Header -->
+        <div class="page-header">
+          <h1>Thời Trang & Phụ Kiện</h1>
+          <p>
+            Khám phá những mẫu thời trang mới nhất từ các thương hiệu nổi tiếng
+          </p>
+        </div>
+
+        <!-- Gallery Section -->
+        <section class="gallery-section">
+          <h2 class="section-title">Bộ Sưu Tập Nổi Bật</h2>
+          <div class="square-gallery-container">
+            <div class="square-gallery-item">
+              <img
+                src="https://cdn-images.farfetch-contents.com/30/85/76/93/30857693_59762885_1000.jpg"
+                alt="Balenciaga Hoodie"
+              />
+              <div class="gallery-item-info">
+                <h3>Balenciaga Logo Hoodie</h3>
+                <p>Áo hoodie cao cấp với thiết kế oversize</p>
+              </div>
+            </div>
+            <div class="square-gallery-item">
+              <img
+                src="https://media.gucci.com/style/DarkGray_Center_0_0_980x980/1692980128/440103_X3F05_1508_001_100_0000_Light-oversize-washed-t-shirt-with-gucci-logo.jpg"
+                alt="Gucci T-Shirt"
+              />
+              <div class="gallery-item-info">
+                <h3>Gucci GG T-Shirt</h3>
+                <p>Áo thun cao cấp với logo GG đặc trưng</p>
+              </div>
+            </div>
+            <div class="square-gallery-item">
+              <img
+                src="https://cdn.vuahanghieu.com/unsafe/0x0/left/top/smart/filters:quality(90)/https://admin.vuahanghieu.com/upload/news/content/2023/12/ao-khoac-puma-t7-women-s-track-jacket-62146401-mau-den-1-jpg-1703147899-21122023153819.jpg"
+                alt="Puma Jacket"
+              />
+              <div class="gallery-item-info">
+                <h3>Puma Sport Jacket</h3>
+                <p>Áo khoác thể thao chống nước</p>
+              </div>
+            </div>
+            <div class="square-gallery-item">
+              <img
+                src="https://i.bbcosplay.com/17539/do-hades-5.jpg"
+                alt="Handes Dress"
+              />
+              <div class="gallery-item-info">
+                <h3>Handes Evening Dress</h3>
+                <p>Váy dạ hội sang trọng, chất liệu lụa cao cấp</p>
+              </div>
+            </div>
+            <div class="square-gallery-item">
+              <img
+                src="https://hongnhungluxury.com/wp-content/uploads/2024/07/tui-chanel-flap-bag-with-top-handle-da-lambskin-1.jpg"
+                alt="Chanel Bag"
+              />
+              <div class="gallery-item-info">
+                <h3>Chanel Classic Flap Bag</h3>
+                <p>Túi xách cổ điển Chanel, chất liệu da cừu cao cấp</p>
+              </div>
+            </div>
+            <div class="square-gallery-item">
+              <img
+                src="https://bizweb.dktcdn.net/thumb/1024x1024/100/467/909/products/giay-nike-air-jordan-1-retro-hig-1.jpg?v=1722760465953"
+                alt="Nike Air Jordan"
+              />
+              <div class="gallery-item-info">
+                <h3>Nike Air Jordan 1</h3>
+                <p>Giày sneaker cổ cao, thiết kế cổ điển</p>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <!-- Brand Filter -->
+        <section class="brand-filter">
+          <h2 class="section-title">Lọc Theo Thương Hiệu</h2>
+          <div class="filter-buttons">
+            <button class="filter-btn active" data-brand="all">Tất Cả</button>
+            <button class="filter-btn" data-brand="balenciaga">
+              Balenciaga
+            </button>
+            <button class="filter-btn" data-brand="gucci">Gucci</button>
+            <button class="filter-btn" data-brand="puma">Puma</button>
+            <button class="filter-btn" data-brand="handes">Handes</button>
+            <button class="filter-btn" data-brand="chanel">Chanel</button>
+            <button class="filter-btn" data-brand="nike">Nike</button>
+            <button class="filter-btn" data-brand="adidas">Adidas</button>
+          </div>
+        </section>
+
+        <!-- Fashion Products -->
+        <section class="fashion-products">
+          <h2 class="section-title">Sản Phẩm Nổi Bật</h2>
+
+          <!-- Balenciaga Products -->
+          <div class="brand-section" id="balenciaga">
+            <h3 class="brand-title">Balenciaga</h3>
+            <div class="product-grid">
+              <!-- Balenciaga 1 -->
+              <div class="product-card" data-brand="balenciaga">
+                <div class="product-image">
+                  <img
+                    src="https://sneakerdaily.vn/wp-content/uploads/2023/11/Ao-Balenciaga-X-Rated-Small-Fit-Hoodie-in-BlackRed-3AC40AABE1A6C0GS.jpg.webp"
+                    alt="Balenciaga Hoodie"
+                  />
+                  <div class="product-badge">Mới</div>
+                  <button class="btn-wishlist">
+                    <i class="far fa-heart"></i>
+                  </button>
+                </div>
+                <div class="product-info">
+                  <h3 class="product-name">Balenciaga Logo Hoodie</h3>
+                  <div class="product-price">
+                    <span class="current-price">11.000.000₫</span>
+                    <span class="original-price">15.990.000₫</span>
+                  </div>
+                  <div class="product-actions">
+                    <button class="btn btn-add-cart">Thêm vào giỏ</button>
+                    <button class="btn-details" data-id="balenciaga1">
+                      Xem Chi Tiết
+                    </button>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Balenciaga 2 -->
+              <div class="product-card" data-brand="balenciaga">
+                <div class="product-image">
+                  <img
+                    src="https://cdn.vuahanghieu.com/unsafe/0x0/left/top/smart/filters:quality(90)/https://admin.vuahanghieu.com/upload/news/content/2024/02/tui-xach-nu-balenciaga-ville-top-handel-xxs-bag-mau-den1-jpg-1706861397-02022024150957.jpg"
+                    alt="Túi Balenciaga Ville Top Handle"
+                  />
+                  <div class="product-badge">Mới</div>
+                  <button class="btn-wishlist">
+                    <i class="far fa-heart"></i>
+                  </button>
+                </div>
+                <div class="product-info">
+                  <h3 class="product-name">Balenciaga Ville Top Handle</h3>
+                  <div class="product-price">
+                    <span class="current-price">28.000.000₫</span>
+                    <span class="original-price">30.990.000₫</span>
+                  </div>
+                  <div class="product-actions">
+                    <button class="btn btn-add-cart">Thêm vào giỏ</button>
+                    <button class="btn-details" data-id="balenciaga2">
+                      Xem Chi Tiết
+                    </button>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Balenciaga 3 -->
+              <div class="product-card" data-brand="balenciaga">
+                <div class="product-image">
+                  <img
+                    src="https://dashjk.vn/wp-content/uploads/2023/12/Giay-Balenciaga-Track-mix-cung-quan-jogger.jpg"
+                    alt="Quần jogger Balenciaga Track"
+                  />
+                  <div class="product-badge">Mới</div>
+                  <button class="btn-wishlist">
+                    <i class="far fa-heart"></i>
+                  </button>
+                </div>
+                <div class="product-info">
+                  <h3 class="product-name">Quần jogger Balenciaga Track</h3>
+                  <div class="product-price">
+                    <span class="current-price">13.500.000₫</span>
+                    <span class="original-price">15.500.000₫</span>
+                  </div>
+                  <div class="product-actions">
+                    <button class="btn btn-add-cart">Thêm vào giỏ</button>
+                    <button class="btn-details" data-id="balenciaga3">
+                      Xem Chi Tiết
+                    </button>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Balenciaga 4 -->
+              <div class="product-card" data-brand="balenciaga">
+                <div class="product-image">
+                  <img
+                    src="https://bizweb.dktcdn.net/thumb/1024x1024/100/413/335/products/duyetfashion-balenciaga-triple-s-sneaker-clear-sole-triple-grey-541624-w09o1-1705-duyet-fashion-4-jpeg.jpg?v=1637029094527"
+                    alt="Sneaker Balenciaga Triple S"
+                  />
+                  <div class="product-badge">Mới</div>
+                  <button class="btn-wishlist">
+                    <i class="far fa-heart"></i>
+                  </button>
+                </div>
+                <div class="product-info">
+                  <h3 class="product-name">Sneaker Balenciaga Triple S</h3>
+                  <div class="product-price">
+                    <span class="current-price">22.000.000₫</span>
+                    <span class="original-price">23.000.000₫</span>
+                  </div>
+                  <div class="product-actions">
+                    <button class="btn btn-add-cart">Thêm vào giỏ</button>
+                    <button class="btn-details" data-id="balenciaga4">
+                      Xem Chi Tiết
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Gucci Products -->
+          <div class="brand-section" id="gucci">
+            <h3 class="brand-title">Gucci</h3>
+            <div class="product-grid">
+              <!-- Gucci T-Shirt 1 -->
+              <div class="product-card" data-brand="gucci">
+                <div class="product-image">
+                  <img
+                    src="https://bizweb.dktcdn.net/100/461/714/products/ao-thun-gucci-white-logo-gg-firenze-1921-logo-trang-den-1721559846589.png?v=1725115156313"
+                    alt="Áo phông Gucci GG Logo"
+                  />
+                  <div class="product-badge">Giảm giá</div>
+                  <button class="btn-wishlist">
+                    <i class="far fa-heart"></i>
+                  </button>
+                </div>
+                <div class="product-info">
+                  <h3 class="product-name">Áo phông Gucci GG Logo</h3>
+                  <div class="product-price">
+                    <span class="current-price">12.500.000 ₫</span>
+                    <span class="original-price">13.500.000₫</span>
+                  </div>
+                  <div class="product-actions">
+                    <button class="btn btn-add-cart">Thêm vào giỏ</button>
+                    <button class="btn-details" data-id="gucci1">
+                      Xem Chi Tiết
+                    </button>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Gucci T-Shirt 2 -->
+              <div class="product-card" data-brand="gucci">
+                <div class="product-image">
+                  <img
+                    src="https://hystore.vn/wp-content/uploads/2024/12/23090C21-955A-4E5B-A31C-EF4BFAEA8668-scaled.jpeg"
+                    alt="Quần jeans Gucci Denim"
+                  />
+                  <div class="product-badge">Giảm giá</div>
+                  <button class="btn-wishlist">
+                    <i class="far fa-heart"></i>
+                  </button>
+                </div>
+                <div class="product-info">
+                  <h3 class="product-name">Quần jeans Gucci Denim</h3>
+                  <div class="product-price">
+                    <span class="current-price">17.000.000₫</span>
+                    <span class="original-price">18.000.000₫</span>
+                  </div>
+                  <div class="product-actions">
+                    <button class="btn btn-add-cart">Thêm vào giỏ</button>
+                    <button class="btn-details" data-id="gucci2">
+                      Xem Chi Tiết
+                    </button>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Gucci T-Shirt 3 -->
+              <div class="product-card" data-brand="gucci">
+                <div class="product-image">
+                  <img
+                    src="https://cdn.vuahanghieu.com/unsafe/0x0/left/top/smart/filters:quality(90)/https://admin.vuahanghieu.com/upload/news/content/2025/09/tui-deo-cheo-nu-gucci-soho-small-leather-disco-bag-black-308364-a7m0g-1000-mau-den2-jpg-1757497753-10092025164913.jpg"
+                    alt="Túi Gucci Soho Disco Bag"
+                  />
+                  <div class="product-badge">Giảm giá</div>
+                  <button class="btn-wishlist">
+                    <i class="far fa-heart"></i>
+                  </button>
+                </div>
+                <div class="product-info">
+                  <h3 class="product-name">Túi Gucci Soho Disco Bag</h3>
+                  <div class="product-price">
+                    <span class="current-price">25.000.000₫</span>
+                    <span class="original-price">27.000.000₫</span>
+                  </div>
+                  <div class="product-actions">
+                    <button class="btn btn-add-cart">Thêm vào giỏ</button>
+                    <button class="btn-details" data-id="gucci3">
+                      Xem Chi Tiết
+                    </button>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Gucci T-Shirt 4 -->
+              <div class="product-card" data-brand="gucci">
+                <div class="product-image">
+                  <img
+                    src="https://vuagiayhieu.com/wp-content/uploads/2024/09/giay-gucci-ace-leather-sneaker-with-green-crocodile-4.jpg"
+                    alt="Sneaker Gucci Ace Leather"
+                  />
+                  <div class="product-badge">Giảm giá</div>
+                  <button class="btn-wishlist">
+                    <i class="far fa-heart"></i>
+                  </button>
+                </div>
+                <div class="product-info">
+                  <h3 class="product-name">Sneaker Gucci Ace Leather</h3>
+                  <div class="product-price">
+                    <span class="current-price">15.000.000₫</span>
+                    <span class="original-price">17.500.000₫</span>
+                  </div>
+                  <div class="product-actions">
+                    <button class="btn btn-add-cart">Thêm vào giỏ</button>
+                    <button class="btn-details" data-id="gucci4">
+                      Xem Chi Tiết
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Puma Products -->
+          <div class="brand-section" id="puma">
+            <h3 class="brand-title">Puma</h3>
+            <div class="product-grid">
+              <!-- Puma Jacket 1 -->
+              <div class="product-card" data-brand="puma">
+                <div class="product-image">
+                  <img
+                    src="https://images.puma.com/image/upload/f_auto,q_auto,b_rgb:fafafa,w_2000,h_2000/global/530076/01/fnd/VNM/fmt/png/%C3%81o-thun-n%E1%BB%AF-Classics-Logo"
+                    alt="Áo thun Puma Classics Logo"
+                  />
+                  <button class="btn-wishlist">
+                    <i class="far fa-heart"></i>
+                  </button>
+                </div>
+                <div class="product-info">
+                  <h3 class="product-name">Áo thun Puma Classics Logo</h3>
+                  <div class="product-price">
+                    <span class="current-price">580.000₫</span>
+                    <span class="original-price">590.000₫</span>
+                  </div>
+                  <div class="product-actions">
+                    <button class="btn btn-add-cart">Thêm vào giỏ</button>
+                    <button class="btn-details" data-id="puma1">
+                      Xem Chi Tiết
+                    </button>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Puma Jacket 2 -->
+              <div class="product-card" data-brand="puma">
+                <div class="product-image">
+                  <img
+                    src="https://cf.shopee.vn/file/vn-11134201-7r98o-m02upq4kqopbcc"
+                    alt="Quần jogger Puma T7"
+                  />
+                  <button class="btn-wishlist">
+                    <i class="far fa-heart"></i>
+                  </button>
+                </div>
+                <div class="product-info">
+                  <h3 class="product-name">Quần jogger Puma T7</h3>
+                  <div class="product-price">
+                    <span class="current-price">1.350.000₫</span>
+                    <span class="original-price">1.500.000₫</span>
+                  </div>
+                  <div class="product-actions">
+                    <button class="btn btn-add-cart">Thêm vào giỏ</button>
+                    <button class="btn-details" data-id="puma2">
+                      Xem Chi Tiết
+                    </button>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Puma Jacket 3 -->
+              <div class="product-card" data-brand="puma">
+                <div class="product-image">
+                  <img
+                    src="https://bizweb.dktcdn.net/thumb/1024x1024/100/319/386/products/d339fe0b-275a-4e42-89b1-48fc73de3999-jpeg.jpg?v=1648743445670"
+                    alt="Túi Puma Originals Bum Bag"
+                  />
+                  <button class="btn-wishlist">
+                    <i class="far fa-heart"></i>
+                  </button>
+                </div>
+                <div class="product-info">
+                  <h3 class="product-name">Túi Puma Originals Bum Bag</h3>
+                  <div class="product-price">
+                    <span class="current-price">890.000₫</span>
+                    <span class="original-price">880.000₫</span>
+                  </div>
+                  <div class="product-actions">
+                    <button class="btn btn-add-cart">Thêm vào giỏ</button>
+                    <button class="btn-details" data-id="puma3">
+                      Xem Chi Tiết
+                    </button>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Puma Jacket 4 -->
+              <div class="product-card" data-brand="puma">
+                <div class="product-image">
+                  <img
+                    src="https://cdn.vuahanghieu.com/unsafe/0x0/left/top/smart/filters:quality(90)/https://admin.vuahanghieu.com/upload/news/content/2023/09/giay-sneaker-unisex-puma-rsx-suede-vitruta-39117602-mau-xanh-xam02-jpg-1694595086-13092023155126.jpg"
+                    alt="Giày Puma RS-X"
+                  />
+                  <button class="btn-wishlist">
+                    <i class="far fa-heart"></i>
+                  </button>
+                </div>
+                <div class="product-info">
+                  <h3 class="product-name">Giày Puma RS-X</h3>
+                  <div class="product-price">
+                    <span class="current-price">4.200.000₫</span>
+                    <span class="original-price">4.400.000₫</span>
+                  </div>
+                  <div class="product-actions">
+                    <button class="btn btn-add-cart">Thêm vào giỏ</button>
+                    <button class="btn-details" data-id="puma4">
+                      Xem Chi Tiết
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Handes Products -->
+          <div class="brand-section" id="handes">
+            <h3 class="brand-title">Handes</h3>
+            <div class="product-grid">
+              <!-- Handes Dress 1 -->
+              <div class="product-card" data-brand="handes">
+                <div class="product-image">
+                  <img
+                    src="https://sithimy.s3.ap-southeast-1.amazonaws.com/sithimy/media/ENv2E3XdMxFWNYovE5iAMRIZ9HnylDVYo6ZdtgyI.jpg"
+                    alt="Áo thun Handes "
+                  />
+                  <div class="product-badge">Bán chạy</div>
+                  <button class="btn-wishlist">
+                    <i class="far fa-heart"></i>
+                  </button>
+                </div>
+                <div class="product-info">
+                  <h3 class="product-name">Áo thun Handes</h3>
+                  <div class="product-price">
+                    <span class="current-price">350.000</span>
+                    <span class="original-price">290.000 ₫</span>
+                  </div>
+                  <div class="product-actions">
+                    <button class="btn btn-add-cart">Thêm vào giỏ</button>
+                    <button class="btn-details" data-id="handes1">
+                      Xem Chi Tiết
+                    </button>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Handes Dress 2 -->
+              <div class="product-card" data-brand="handes">
+                <div class="product-image">
+                  <img
+                    src="https://i5.walmartimages.com/asr/a3276500-5111-4a04-9030-d60f38a09ed0.df00e78b97a39236f496d0d8ced6443f.jpeg"
+                    alt="Hanes Sweat Shorts"
+                  />
+                  <div class="product-badge">Bán chạy</div>
+                  <button class="btn-wishlist">
+                    <i class="far fa-heart"></i>
+                  </button>
+                </div>
+                <div class="product-info">
+                  <h3 class="product-name">Hanes Sweat Shorts</h3>
+                  <div class="product-price">
+                    <span class="current-price">1.690.000₫</span>
+                    <span class="original-price">1.890.000₫</span>
+                  </div>
+                  <div class="product-actions">
+                    <button class="btn btn-add-cart">Thêm vào giỏ</button>
+                    <button class="btn-details" data-id="handes2">
+                      Xem Chi Tiết
+                    </button>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Handes Dress 3 -->
+              <div class="product-card" data-brand="handes">
+                <div class="product-image">
+                  <img
+                    src="https://media.karousell.com/media/photos/products/2024/2/11/hanes_totebag_preloved_1707659771_b177e59e_progressive.jpg"
+                    alt="Hanes Canvas Tote Bag"
+                  />
+                  <div class="product-badge">Bán chạy</div>
+                  <button class="btn-wishlist">
+                    <i class="far fa-heart"></i>
+                  </button>
+                </div>
+                <div class="product-info">
+                  <h3 class="product-name">Hanes Canvas Tote Bag</h3>
+                  <div class="product-price">
+                    <span class="current-price">790.000₫</span>
+                    <span class="original-price">800.000₫</span>
+                  </div>
+                  <div class="product-actions">
+                    <button class="btn btn-add-cart">Thêm vào giỏ</button>
+                    <button class="btn-details" data-id="handes3">
+                      Xem Chi Tiết
+                    </button>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Handes Dress 4 -->
+              <div class="product-card" data-brand="handes">
+                <div class="product-image">
+                  <img
+                    src="https://cdn.yousport.vn/Media/Products/130720012932210/gbd-pan-hades-ic-den-dq-2.jpg"
+                    alt="Hanes Basic Runner"
+                  />
+                  <div class="product-badge">Bán chạy</div>
+                  <button class="btn-wishlist">
+                    <i class="far fa-heart"></i>
+                  </button>
+                </div>
+                <div class="product-info">
+                  <h3 class="product-name">Hanes Basic Runner</h3>
+                  <div class="product-price">
+                    <span class="current-price">2.150.000₫</span>
+                    <span class="original-price">2.250.000₫</span>
+                  </div>
+                  <div class="product-actions">
+                    <button class="btn btn-add-cart">Thêm vào giỏ</button>
+                    <button class="btn-details" data-id="handes4">
+                      Xem Chi Tiết
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Chanel Products -->
+          <div class="brand-section" id="chanel">
+            <h3 class="brand-title">Chanel</h3>
+            <div class="product-grid">
+              <!-- Chanel Bag 1 -->
+              <div class="product-card" data-brand="chanel">
+                <div class="product-image">
+                  <img
+                    src="https://kenh14cdn.com/2019/11/14/photo-1-15737033215041166855880.jpg"
+                    alt="Áo khoác Chanel Tweed"
+                  />
+                  <div class="product-badge">Limited</div>
+                  <button class="btn-wishlist">
+                    <i class="far fa-heart"></i>
+                  </button>
+                </div>
+                <div class="product-info">
+                  <h3 class="product-name">Áo khoác Chanel Tweed</h3>
+                  <div class="product-price">
+                    <span class="current-price">95.000.000₫</span>
+                    <span class="original-price">96.500.000₫</span>
+                  </div>
+                  <div class="product-actions">
+                    <button class="btn btn-add-cart">Thêm vào giỏ</button>
+                    <button class="btn-details" data-id="chanel1">
+                      Xem Chi Tiết
+                    </button>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Chanel Bag 2 -->
+              <div class="product-card" data-brand="chanel">
+                <div class="product-image">
+                  <img
+                    src="https://hotgirlshop.vn/uploads/picture/31052022/News/20531124619-quan-suon-jean-chanel-fashion.jpg"
+                    alt="Quần Chanel"
+                  />
+                  <div class="product-badge">Limited</div>
+                  <button class="btn-wishlist">
+                    <i class="far fa-heart"></i>
+                  </button>
+                </div>
+                <div class="product-info">
+                  <h3 class="product-name">Quần Chanel</h3>
+                  <div class="product-price">
+                    <span class="current-price">10.500.000₫</span>
+                    <span class="original-price">11.500.000₫</span>
+                  </div>
+                  <div class="product-actions">
+                    <button class="btn btn-add-cart">Thêm vào giỏ</button>
+                    <button class="btn-details" data-id="chanel2">
+                      Xem Chi Tiết
+                    </button>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Chanel Bag 3 -->
+              <div class="product-card" data-brand="chanel">
+                <div class="product-image">
+                  <img
+                    src="https://hongnhungluxury.com/wp-content/uploads/2024/08/giay-espadrille-chanel.jpg.webp"
+                    alt="Giày Chanel Espadrille"
+                  />
+                  <div class="product-badge">Limited</div>
+                  <button class="btn-wishlist">
+                    <i class="far fa-heart"></i>
+                  </button>
+                </div>
+                <div class="product-info">
+                  <h3 class="product-name">Giày Chanel Espadrille</h3>
+                  <div class="product-price">
+                    <span class="current-price">14.000.000₫</span>
+                    <span class="original-price">14.500.000₫</span>
+                  </div>
+                  <div class="product-actions">
+                    <button class="btn btn-add-cart">Thêm vào giỏ</button>
+                    <button class="btn-details" data-id="chanel3">
+                      Xem Chi Tiết
+                    </button>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Chanel Bag 4 -->
+              <div class="product-card" data-brand="chanel">
+                <div class="product-image">
+                  <img
+                    src="https://hongnhungluxury.com/wp-content/uploads/2024/06/tui-chanel-classic-small-da-caviar-1.jpg  "
+                    alt="Túi Chanel Classic Flap Small"
+                  />
+                  <div class="product-badge">Limited</div>
+                  <button class="btn-wishlist">
+                    <i class="far fa-heart"></i>
+                  </button>
+                </div>
+                <div class="product-info">
+                  <h3 class="product-name">Túi Chanel Classic Flap Small</h3>
+                  <div class="product-price">
+                    <span class="current-price">45.990.000₫</span>
+                    <span class="original-price">52.990.000₫</span>
+                  </div>
+                  <div class="product-actions">
+                    <button class="btn btn-add-cart">Thêm vào giỏ</button>
+                    <button class="btn-details" data-id="chanel4">
+                      Xem Chi Tiết
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Nike Products -->
+          <div class="brand-section" id="nike">
+            <h3 class="brand-title">Nike</h3>
+            <div class="product-grid">
+              <!-- Nike Air Jordan 1 -->
+              <div class="product-card" data-brand="nike">
+                <div class="product-image">
+                  <img
+                    src="https://bizweb.dktcdn.net/100/413/756/products/image-1730952701419.png?v=1731120849307"
+                    alt="Áo khoác Nike Windrunner"
+                  />
+                  <div class="product-badge">Gaming</div>
+                  <button class="btn-wishlist">
+                    <i class="far fa-heart"></i>
+                  </button>
+                </div>
+                <div class="product-info">
+                  <h3 class="product-name">Áo khoác Nike Windrunner</h3>
+                  <div class="product-price">
+                    <span class="current-price">2.350.000₫</span>
+                    <span class="original-price">2.500.000₫</span>
+                  </div>
+                  <div class="product-actions">
+                    <button class="btn btn-add-cart">Thêm vào giỏ</button>
+                    <button class="btn-details" data-id="nike1">
+                      Xem Chi Tiết
+                    </button>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Nike Air Jordan 2 -->
+              <div class="product-card" data-brand="nike">
+                <div class="product-image">
+                  <img
+                    src="https://bizweb.dktcdn.net/100/425/004/products/886932-431-a-prem.jpg?v=1678189303573"
+                    alt="Quần short Nike Pro Training"
+                  />
+                  <div class="product-badge">Gaming</div>
+                  <button class="btn-wishlist">
+                    <i class="far fa-heart"></i>
+                  </button>
+                </div>
+                <div class="product-info">
+                  <h3 class="product-name">Quần short Nike Pro Training</h3>
+                  <div class="product-price">
+                    <span class="current-price">1.100.000₫</span>
+                    <span class="original-price">1.200.000₫</span>
+                  </div>
+                  <div class="product-actions">
+                    <button class="btn btn-add-cart">Thêm vào giỏ</button>
+                    <button class="btn-details" data-id="nike2">
+                      Xem Chi Tiết
+                    </button>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Nike Air Jordan 3 -->
+              <div class="product-card" data-brand="nike">
+                <div class="product-image">
+                  <img
+                    src="https://cdn.vuahanghieu.com/unsafe/0x0/left/top/smart/filters:quality(90)/https://admin.vuahanghieu.com/upload/news/content/2023/04/ao-thun-nam-nike-dri-fit-challenge-iii-t-shirt-bv6703-010-mau-den-jpg-1680753495-06042023105815.jpg"
+                    alt="Áo thun Nike Dri-Fit Tee"
+                  />
+                  <div class="product-badge">Gaming</div>
+                  <button class="btn-wishlist">
+                    <i class="far fa-heart"></i>
+                  </button>
+                </div>
+                <div class="product-info">
+                  <h3 class="product-name">Áo thun Nike Dri-Fit Tee</h3>
+                  <div class="product-price">
+                    <span class="current-price">750.000₫</span>
+                    <span class="original-price">760.000₫</span>
+                  </div>
+                  <div class="product-actions">
+                    <button class="btn btn-add-cart">Thêm vào giỏ</button>
+                    <button class="btn-details" data-id="nike3">
+                      Xem Chi Tiết
+                    </button>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Nike Air Jordan 4 -->
+              <div class="product-card" data-brand="nike">
+                <div class="product-image">
+                  <img
+                    src="https://cdn.storims.com/api/v2/image/resize?path=https://storage.googleapis.com/storims_cdn/storims/uploads/a57ede542c7eef38f804859080109d1d.jpeg&format=jpeg"
+                    alt="Giày Nike Air Max 270"
+                  />
+                  <div class="product-badge">Gaming</div>
+                  <button class="btn-wishlist">
+                    <i class="far fa-heart"></i>
+                  </button>
+                </div>
+                <div class="product-info">
+                  <h3 class="product-name">Giày Nike Air Max 270</h3>
+                  <div class="product-price">
+                    <span class="current-price">5.200.000₫</span>
+                    <span class="original-price">6.300.000₫</span>
+                  </div>
+                  <div class="product-actions">
+                    <button class="btn btn-add-cart">Thêm vào giỏ</button>
+                    <button class="btn-details" data-id="nike4">
+                      Xem Chi Tiết
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Adidas Products -->
+          <div class="brand-section" id="adidas">
+            <h3 class="brand-title">Adidas</h3>
+            <div class="product-grid">
+              <!-- Adidas Ultraboost 1 -->
+              <div class="product-card" data-brand="adidas">
+                <div class="product-image">
+                  <img
+                    src="https://cdn.vuahanghieu.com/unsafe/0x0/left/top/smart/filters:quality(90)/https://admin.vuahanghieu.com/upload/news/content/2023/06/ao-thun-nu-adidas-always-original-ic8806-mau-trang-jpg-1687311898-21062023084458.jpg"
+                    alt="Áo thun Adidas Originals "
+                  />
+                  <button class="btn-wishlist">
+                    <i class="far fa-heart"></i>
+                  </button>
+                </div>
+                <div class="product-info">
+                  <h3 class="product-name">Áo thun Adidas Originals</h3>
+                  <div class="product-price">
+                    <span class="current-price">950.000₫</span>
+                    <span class="original-price">960.000₫</span>
+                  </div>
+                  <div class="product-actions">
+                    <button class="btn btn-add-cart">Thêm vào giỏ</button>
+                    <button class="btn-details" data-id="adidas1">
+                      Xem Chi Tiết
+                    </button>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Adidas Ultraboost 2 -->
+              <div class="product-card" data-brand="adidas">
+                <div class="product-image">
+                  <img
+                    src="https://trungsneaker.com/wp-content/uploads/2024/08/giay-adidas-nmd-r1-slip-on-white-gw5699-40-2.jpeg"
+                    alt="Giày Adidas NMD Runner"
+                  />
+                  <button class="btn-wishlist">
+                    <i class="far fa-heart"></i>
+                  </button>
+                </div>
+                <div class="product-info">
+                  <h3 class="product-name">Giày Adidas NMD Runner</h3>
+                  <div class="product-price">
+                    <span class="current-price">3.790.000₫</span>
+                    <span class="original-price">4.000.000₫</span>
+                  </div>
+                  <div class="product-actions">
+                    <button class="btn btn-add-cart">Thêm vào giỏ</button>
+                    <button class="btn-details" data-id="adidas2">
+                      Xem Chi Tiết
+                    </button>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Adidas Ultraboost 3 -->
+              <div class="product-card" data-brand="adidas">
+                <div class="product-image">
+                  <img
+                    src="https://bizweb.dktcdn.net/thumb/1024x1024/100/425/351/products/z5371353476397-f8503854910484dee4265e5a484b31d2-1714115618266.jpg?v=1714121545450"
+                    alt="Quần jogger Adidas "
+                  />
+                  <button class="btn-wishlist">
+                    <i class="far fa-heart"></i>
+                  </button>
+                </div>
+                <div class="product-info">
+                  <h3 class="product-name">Quần jogger Adidas</h3>
+                  <div class="product-price">
+                    <span class="current-price">1.450.000₫</span>
+                    <span class="original-price">1.550.000₫</span>
+                  </div>
+                  <div class="product-actions">
+                    <button class="btn btn-add-cart">Thêm vào giỏ</button>
+                    <button class="btn-details" data-id="adidas3">
+                      Xem Chi Tiết
+                    </button>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Adidas Ultraboost 4 -->
+              <div class="product-card" data-brand="adidas">
+                <div class="product-image">
+                  <img
+                    src="https://bizweb.dktcdn.net/thumb/grande/100/340/361/products/aogiodet3socessentialstrangib0-666c4c84-882b-481c-8243-c33e466bf5da.jpg?v=1742786267353"
+                    alt="Áo khoác adidas"
+                  />
+                  <button class="btn-wishlist">
+                    <i class="far fa-heart"></i>
+                  </button>
+                </div>
+                <div class="product-info">
+                  <h3 class="product-name">Áo khoác adidas</h3>
+                  <div class="product-price">
+                    <span class="current-price">1.990.000₫</span>
+                    <span class="original-price">2.345.000₫</span>
+                  </div>
+                  <div class="product-actions">
+                    <button class="btn btn-add-cart">Thêm vào giỏ</button>
+                    <button class="btn-details" data-id="adidas4">
+                      Xem Chi Tiết
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+      </div>
+    </main>
+
+    <!-- Modal Chi Tiết Sản Phẩm -->
+    <div class="modal-overlay" id="productModal">
+      <div class="modal-content">
+        <button class="modal-close" id="modalClose">
+          <i class="fas fa-times"></i>
+        </button>
+        <div class="modal-body">
+          <div class="modal-product">
+            <div class="modal-image">
+              <img id="modalImage" src="" alt="Product Image" />
+            </div>
+            <div class="modal-info">
+              <h2 id="modalTitle"></h2>
+              <div class="modal-price">
+                <span class="modal-current-price" id="modalCurrentPrice"></span>
+                <span
+                  class="modal-original-price"
+                  id="modalOriginalPrice"
+                ></span>
+              </div>
+              <div class="modal-specs">
+                <h3>Thông tin sản phẩm</h3>
+                <ul id="modalSpecs"></ul>
+              </div>
+              <div class="modal-actions">
+                <button class="btn btn-buy">
+                  <i class="fas fa-shopping-cart"></i> Thêm vào giỏ hàng
+                </button>
+                <button class="btn btn-buy btn-accent">
+                  <i class="fas fa-bolt"></i> Mua ngay
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Footer -->
+    <footer>
+      <div class="container">
+        <div class="footer-content">
+          <div class="footer-column">
+            <h3>Về chúng tôi</h3>
+            <p>
+              ĐBDK2T - Nơi cung cấp các sản phẩm điện tử chính hãng với giá cả
+              cạnh tranh và dịch vụ hậu mãi tốt nhất.
+            </p>
+          </div>
+          <div class="footer-column">
+            <h3>Liên Kết Nhanh</h3>
+            <ul class="footer-links">
+              <li><a href="dienthoai.html">Điện Thoại</a></li>
+              <li><a href="laptop.html">Laptop</a></li>
+              <li><a href="quanao.html">Quần áo</a></li>
+              <li><a href="sach.html">Sách</a></li>
+              <li><a href="products.html">Hàng Nóng</a></li>
+            </ul>
+          </div>
+          <div class="footer-column">
+            <h3>Liên Hệ MXH</h3>
+            <div class="social-links">
+              <a href="#" class="social-link"
+                ><i class="fab fa-github"></i>Github</a
+              >
+              <a href="#" class="social-link"
+                ><i class="fab fa-youtube"></i>Youtube</a
+              >
+              <a href="#" class="social-link"
+                ><i class="fab fa-tiktok"></i>TikTok</a
+              >
+            </div>
+          </div>
+          <div class="footer-column">
+            <h3>Thông Tin Liên Hệ</h3>
+            <ul class="contact-info-footer">
+              <li>
+                <i class="fas fa-map-marker-alt"></i>
+                <span>504 Đại lộ Bình Dương</span>
+              </li>
+              <li>
+                <i class="fas fa-phone"></i>
+                <span>01234567890</span>
+              </li>
+              <li>
+                <i class="fas fa-envelope"></i>
+                <span>info@dbdk2tdientu.vn</span>
+              </li>
+              <li>
+                <i class="fas fa-clock"></i>
+                <span>Thứ 2 - Chủ nhật: 8:00 - 20:00</span>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="footer-bottom">
+          <p>&copy; 2023 Khánh - Bình - Dũng. Tất cả các quyền được bảo lưu.</p>
+        </div>
+      </div>
+    </footer>
+
+    <script src="js/script.js"></script>
+    <script src="js/quanao.js"></script>
+  </body>
+</html>

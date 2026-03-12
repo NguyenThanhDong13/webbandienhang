@@ -1,0 +1,651 @@
+<!DOCTYPE html>
+<html lang="vi">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sách</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+    />
+
+    <link rel="stylesheet" href="css/sach.css" />
+  </head>
+  <body>
+    <!-- Họa tiết trang trí -->
+    <div class="decoration-top-left"></div>
+    <div class="decoration-top-right"></div>
+    <div class="decoration-bottom-left"></div>
+    <div class="decoration-bottom-right"></div>
+
+    <!-- Header -->
+    <header>
+      <div class="main-header">
+        <div class="container">
+          <div class="header-content">
+            <a href="index.html" class="logo">
+              <i class="fas fa-microchip"></i>
+              KDB
+            </a>
+
+            <nav>
+              <ul class="nav-menu">
+                <li class="nav-item">
+                  <a href="index.html" class="nav-link"
+                    ><i class="fas fa-home"></i> Trang chủ</a
+                  >
+                </li>
+                <li class="nav-item">
+                  <a href="dienthoai.html" class="nav-link"
+                    ><i class="fa-solid fa-phone"></i>Điện Thoại</a
+                  >
+                </li>
+                <li class="nav-item">
+                  <a href="laptop.html" class="nav-link"
+                    ><i class="fa-solid fa-laptop"></i>Laptop</a
+                  >
+                </li>
+                <li class="nav-item">
+                  <a href="quanao.html" class="nav-link"
+                    ><i class="fa-solid fa-shirt"></i>Quần áo</a
+                  >
+                </li>
+                <li class="nav-item">
+                  <a href="sach.html" class="nav-link active"
+                    ><i class="fa-solid fa-book"></i>Sách</a
+                  >
+                </li>
+                <li class="nav-item">
+                  <a href="hangnong.html" class="nav-link"
+                    ><i class="fa-solid fa-gun"></i>Hàng Nóng</a
+                  >
+                </li>
+                <li class="nav-item">
+                  <a href="contact.html" class="nav-link"
+                    ><i class="fa-solid fa-comment-dots"></i> Liên hệ</a
+                  >
+                </li>
+              </ul>
+            </nav>
+
+            <div class="header-actions">
+              <div class="auth-links">
+                <a href="login.html" id="login-link"
+                  ><i class="fas fa-user"></i> Đăng nhập</a
+                >
+                <a href="register.html" id="register-link"
+                  ><i class="fas fa-user-plus"></i> Đăng ký</a
+                >
+                <a href="#" id="logout-link" style="display: none"
+                  ><i class="fas fa-sign-out-alt"></i> Đăng xuất</a
+                >
+              </div>
+              <div class="header-action">
+                <i class="fas fa-heart"></i>
+              </div>
+              <div class="header-action">
+                <i class="fas fa-shopping-cart"></i>
+                <span class="cart-count">0</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Search Section -->
+      <div class="search-section">
+        <div class="container">
+          <div class="search-container">
+            <div class="search-box">
+              <i class="fas fa-search search-icon"></i>
+              <input
+                type="text"
+                class="search-input"
+                placeholder="Tìm kiếm sách, từ khóa..."
+              />
+            </div>
+            <button class="search-btn">
+              <i class="fas fa-search"></i> Tìm kiếm
+            </button>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <!-- Main Content -->
+    <main class="sach-page">
+      <div class="container">
+        <!-- Page Header -->
+        <div class="page-header">
+          <h1>Sách & Tài Liệu</h1>
+          <p>Khám phá những cuốn sách hay với nội dung phong phú và đa dạng</p>
+        </div>
+
+        <!-- Sach Emotions -->
+        <section class="sach-emotions">
+          <h2 class="section-title">Sách Theo Cảm Xúc</h2>
+          <div class="emotions-container">
+            <div class="emotion-item" data-emotion="vui">
+              <div class="emotion-icon">
+                <i class="fas fa-laugh-beam"></i>
+              </div>
+              <h3>Vui Vẻ</h3>
+              <p>Sách mang lại tiếng cười và niềm vui</p>
+            </div>
+            <div class="emotion-item" data-emotion="buon">
+              <div class="emotion-icon">
+                <i class="fas fa-sad-tear"></i>
+              </div>
+              <h3>Buồn Bã</h3>
+              <p>Sách chạm đến trái tim và cảm xúc</p>
+            </div>
+            <div class="emotion-item" data-emotion="yeu">
+              <div class="emotion-icon">
+                <i class="fas fa-heart"></i>
+              </div>
+              <h3>Tình Yêu</h3>
+              <p>Sách về tình yêu và lãng mạn</p>
+            </div>
+            <div class="emotion-item" data-emotion="kinhdi">
+              <div class="emotion-icon">
+                <i class="fas fa-ghost"></i>
+              </div>
+              <h3>Kinh Dị</h3>
+              <p>Sách gây căng thẳng và hồi hộp</p>
+            </div>
+          </div>
+        </section>
+
+        <!-- Category Filter -->
+        <section class="category-filter">
+          <h2 class="section-title">Lọc Theo Thể Loại</h2>
+          <div class="filter-buttons">
+            <button class="filter-btn active" data-category="all">
+              Tất Cả
+            </button>
+            <button class="filter-btn" data-category="vanhoc">Văn Học</button>
+            <button class="filter-btn" data-category="kinhte">Kinh Tế</button>
+            <button class="filter-btn" data-category="khoahoc">Khoa Học</button>
+            <button class="filter-btn" data-category="lichsu">Lịch Sử</button>
+            <button class="filter-btn" data-category="thieunhi">
+              Thiếu Nhi
+            </button>
+          </div>
+        </section>
+
+        <!-- Sach Products -->
+        <section class="sach-products">
+          <h2 class="section-title">Sản Phẩm Nổi Bật</h2>
+
+          <!-- Van Hoc Products -->
+          <div class="category-section" id="vanhoc">
+            <h3 class="category-title">Văn Học</h3>
+            <div class="product-grid">
+              <!-- Sách 1 -->
+              <div class="product-card" data-category="vanhoc">
+                <div class="product-image">
+                  <img src="#" alt="Sách Văn Học 1" />
+                  <div class="product-badge">Mới</div>
+                  <button class="btn-wishlist">
+                    <i class="far fa-heart"></i>
+                  </button>
+                </div>
+                <div class="product-info">
+                  <h3 class="product-name">Tác Phẩm Văn Học Kinh Điển</h3>
+                  <div class="product-price">
+                    <span class="current-price">120.000₫</span>
+                    <span class="original-price">150.000₫</span>
+                  </div>
+                  <button class="btn-details" data-id="1">Xem Chi Tiết</button>
+                </div>
+              </div>
+
+              <!-- Sách 2 -->
+              <div class="product-card" data-category="vanhoc">
+                <div class="product-image">
+                  <img
+                    src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSNlqPi8OybLk85ydA-ezAmLI9lzF7m4idrfQ&s"
+                    alt="Sách Văn Học 2"
+                  />
+                  <div class="product-badge">Giảm giá</div>
+                  <button class="btn-wishlist">
+                    <i class="far fa-heart"></i>
+                  </button>
+                </div>
+                <div class="product-info">
+                  <h3 class="product-name">Tiểu Thuyết Đương Đại</h3>
+                  <div class="product-price">
+                    <span class="current-price">95.000₫</span>
+                    <span class="original-price">120.000₫</span>
+                  </div>
+                  <button class="btn-details" data-id="2">Xem Chi Tiết</button>
+                </div>
+              </div>
+
+              <!-- Sách 3 -->
+              <div class="product-card" data-category="vanhoc">
+                <div class="product-image">
+                  <img src="#" alt="Sách Văn Học 3" />
+                  <button class="btn-wishlist">
+                    <i class="far fa-heart"></i>
+                  </button>
+                </div>
+                <div class="product-info">
+                  <h3 class="product-name">Tuyển Tập Truyện Ngắn</h3>
+                  <div class="product-price">
+                    <span class="current-price">85.000₫</span>
+                    <span class="original-price">100.000₫</span>
+                  </div>
+                  <button class="btn-details" data-id="3">Xem Chi Tiết</button>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Kinh Te Products -->
+          <div class="category-section" id="kinhte">
+            <h3 class="category-title">Kinh Tế</h3>
+            <div class="product-grid">
+              <!-- Sách 4 -->
+              <div class="product-card" data-category="kinhte">
+                <div class="product-image">
+                  <img src="#" alt="Sách Kinh Tế 1" />
+                  <div class="product-badge">Mới</div>
+                  <button class="btn-wishlist">
+                    <i class="far fa-heart"></i>
+                  </button>
+                </div>
+                <div class="product-info">
+                  <h3 class="product-name">Kinh Tế Học Cơ Bản</h3>
+                  <div class="product-price">
+                    <span class="current-price">135.000₫</span>
+                    <span class="original-price">160.000₫</span>
+                  </div>
+                  <button class="btn-details" data-id="4">Xem Chi Tiết</button>
+                </div>
+              </div>
+
+              <!-- Sách 5 -->
+              <div class="product-card" data-category="kinhte">
+                <div class="product-image">
+                  <img src="#" alt="Sách Kinh Tế 2" />
+                  <div class="product-badge">Bán chạy</div>
+                  <button class="btn-wishlist">
+                    <i class="far fa-heart"></i>
+                  </button>
+                </div>
+                <div class="product-info">
+                  <h3 class="product-name">Đầu Tư Thông Minh</h3>
+                  <div class="product-price">
+                    <span class="current-price">110.000₫</span>
+                    <span class="original-price">130.000₫</span>
+                  </div>
+                  <button class="btn-details" data-id="5">Xem Chi Tiết</button>
+                </div>
+              </div>
+
+              <!-- Sách 6 -->
+              <div class="product-card" data-category="kinhte">
+                <div class="product-image">
+                  <img src="#" alt="Sách Kinh Tế 3" />
+                  <button class="btn-wishlist">
+                    <i class="far fa-heart"></i>
+                  </button>
+                </div>
+                <div class="product-info">
+                  <h3 class="product-name">Quản Trị Doanh Nghiệp</h3>
+                  <div class="product-price">
+                    <span class="current-price">125.000₫</span>
+                    <span class="original-price">145.000₫</span>
+                  </div>
+                  <button class="btn-details" data-id="6">Xem Chi Tiết</button>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Khoa Hoc Products -->
+          <div class="category-section" id="khoahoc">
+            <h3 class="category-title">Khoa Học</h3>
+            <div class="product-grid">
+              <!-- Sách 7 -->
+              <div class="product-card" data-category="khoahoc">
+                <div class="product-image">
+                  <img src="#" alt="Sách Khoa Học 1" />
+                  <div class="product-badge">Mới</div>
+                  <button class="btn-wishlist">
+                    <i class="far fa-heart"></i>
+                  </button>
+                </div>
+                <div class="product-info">
+                  <h3 class="product-name">Vũ Trụ Quanh Ta</h3>
+                  <div class="product-price">
+                    <span class="current-price">140.000₫</span>
+                    <span class="original-price">165.000₫</span>
+                  </div>
+                  <button class="btn-details" data-id="7">Xem Chi Tiết</button>
+                </div>
+              </div>
+
+              <!-- Sách 8 -->
+              <div class="product-card" data-category="khoahoc">
+                <div class="product-image">
+                  <img src="#" alt="Sách Khoa Học 2" />
+                  <div class="product-badge">Giảm giá</div>
+                  <button class="btn-wishlist">
+                    <i class="far fa-heart"></i>
+                  </button>
+                </div>
+                <div class="product-info">
+                  <h3 class="product-name">Công Nghệ Tương Lai</h3>
+                  <div class="product-price">
+                    <span class="current-price">115.000₫</span>
+                    <span class="original-price">140.000₫</span>
+                  </div>
+                  <button class="btn-details" data-id="8">Xem Chi Tiết</button>
+                </div>
+              </div>
+
+              <!-- Sách 9 -->
+              <div class="product-card" data-category="khoahoc">
+                <div class="product-image">
+                  <img src="#" alt="Sách Khoa Học 3" />
+                  <button class="btn-wishlist">
+                    <i class="far fa-heart"></i>
+                  </button>
+                </div>
+                <div class="product-info">
+                  <h3 class="product-name">Khám Phá Thiên Nhiên</h3>
+                  <div class="product-price">
+                    <span class="current-price">95.000₫</span>
+                    <span class="original-price">115.000₫</span>
+                  </div>
+                  <button class="btn-details" data-id="9">Xem Chi Tiết</button>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Lich Su Products -->
+          <div class="category-section" id="lichsu">
+            <h3 class="category-title">Lịch Sử</h3>
+            <div class="product-grid">
+              <!-- Sách 10 -->
+              <div class="product-card" data-category="lichsu">
+                <div class="product-image">
+                  <img src="#" alt="Sách Lịch Sử 1" />
+                  <div class="product-badge">Bán chạy</div>
+                  <button class="btn-wishlist">
+                    <i class="far fa-heart"></i>
+                  </button>
+                </div>
+                <div class="product-info">
+                  <h3 class="product-name">Lịch Sử Việt Nam</h3>
+                  <div class="product-price">
+                    <span class="current-price">155.000₫</span>
+                    <span class="original-price">180.000₫</span>
+                  </div>
+                  <button class="btn-details" data-id="10">Xem Chi Tiết</button>
+                </div>
+              </div>
+
+              <!-- Sách 11 -->
+              <div class="product-card" data-category="lichsu">
+                <div class="product-image">
+                  <img src="#" alt="Sách Lịch Sử 2" />
+                  <div class="product-badge">Mới</div>
+                  <button class="btn-wishlist">
+                    <i class="far fa-heart"></i>
+                  </button>
+                </div>
+                <div class="product-info">
+                  <h3 class="product-name">Thế Giới Cổ Đại</h3>
+                  <div class="product-price">
+                    <span class="current-price">130.000₫</span>
+                    <span class="original-price">155.000₫</span>
+                  </div>
+                  <button class="btn-details" data-id="11">Xem Chi Tiết</button>
+                </div>
+              </div>
+
+              <!-- Sách 12 -->
+              <div class="product-card" data-category="lichsu">
+                <div class="product-image">
+                  <img src="#" alt="Sách Lịch Sử 3" />
+                  <button class="btn-wishlist">
+                    <i class="far fa-heart"></i>
+                  </button>
+                </div>
+                <div class="product-info">
+                  <h3 class="product-name">Nhân Vật Lịch Sử</h3>
+                  <div class="product-price">
+                    <span class="current-price">105.000₫</span>
+                    <span class="original-price">125.000₫</span>
+                  </div>
+                  <button class="btn-details" data-id="12">Xem Chi Tiết</button>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Thieu Nhi Products -->
+          <div class="category-section" id="thieunhi">
+            <h3 class="category-title">Thiếu Nhi</h3>
+            <div class="product-grid">
+              <!-- Sách 13 -->
+              <div class="product-card" data-category="thieunhi">
+                <div class="product-image">
+                  <img src="#" alt="Sách Thiếu Nhi 1" />
+                  <div class="product-badge">Mới</div>
+                  <button class="btn-wishlist">
+                    <i class="far fa-heart"></i>
+                  </button>
+                </div>
+                <div class="product-info">
+                  <h3 class="product-name">Truyện Cổ Tích</h3>
+                  <div class="product-price">
+                    <span class="current-price">75.000₫</span>
+                    <span class="original-price">90.000₫</span>
+                  </div>
+                  <button class="btn-details" data-id="13">Xem Chi Tiết</button>
+                </div>
+              </div>
+
+              <!-- Sách 14 -->
+              <div class="product-card" data-category="thieunhi">
+                <div class="product-image">
+                  <img src="#" alt="Sách Thiếu Nhi 2" />
+                  <div class="product-badge">Giảm giá</div>
+                  <button class="btn-wishlist">
+                    <i class="far fa-heart"></i>
+                  </button>
+                </div>
+                <div class="product-info">
+                  <h3 class="product-name">Khám Phá Khoa Học</h3>
+                  <div class="product-price">
+                    <span class="current-price">85.000₫</span>
+                    <span class="original-price">100.000₫</span>
+                  </div>
+                  <button class="btn-details" data-id="14">Xem Chi Tiết</button>
+                </div>
+              </div>
+
+              <!-- Sách 15 -->
+              <div class="product-card" data-category="thieunhi">
+                <div class="product-image">
+                  <img src="#" alt="Sách Thiếu Nhi 3" />
+                  <button class="btn-wishlist">
+                    <i class="far fa-heart"></i>
+                  </button>
+                </div>
+                <div class="product-info">
+                  <h3 class="product-name">Truyện Tranh</h3>
+                  <div class="product-price">
+                    <span class="current-price">65.000₫</span>
+                    <span class="original-price">80.000₫</span>
+                  </div>
+                  <button class="btn-details" data-id="15">Xem Chi Tiết</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+      </div>
+    </main>
+
+    <!-- Modal Chi Tiết Sản Phẩm -->
+    <div class="modal-overlay" id="productModal">
+      <div class="modal-content">
+        <button class="modal-close" id="modalClose">
+          <i class="fas fa-times"></i>
+        </button>
+        <div class="modal-body">
+          <div class="modal-product">
+            <div class="modal-image">
+              <img id="modalImage" src="" alt="Product Image" />
+            </div>
+            <div class="modal-info">
+              <h2 id="modalTitle"></h2>
+              <div class="modal-price">
+                <span class="modal-current-price" id="modalCurrentPrice"></span>
+                <span
+                  class="modal-original-price"
+                  id="modalOriginalPrice"
+                ></span>
+              </div>
+              <div class="modal-specs">
+                <h3>Thông tin chi tiết</h3>
+                <ul id="modalSpecs"></ul>
+              </div>
+              <div class="modal-actions">
+                <button class="btn btn-buy">
+                  <i class="fas fa-shopping-cart"></i> Thêm vào giỏ hàng
+                </button>
+                <button class="btn btn-buy btn-accent">
+                  <i class="fas fa-bolt"></i> Mua ngay
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Modal Sách Theo Cảm Xúc -->
+    <div class="modal-overlay" id="emotionModal">
+      <div class="modal-content">
+        <button class="modal-close" id="emotionModalClose">
+          <i class="fas fa-times"></i>
+        </button>
+        <div class="modal-body">
+          <div class="modal-emotion">
+            <div class="modal-emotion-header">
+              <div class="emotion-icon-large" id="modalEmotionIcon"></div>
+              <h2 id="modalEmotionTitle"></h2>
+            </div>
+            <div class="modal-emotion-content">
+              <div class="emotion-book">
+                <div class="emotion-book-image">
+                  <img id="modalEmotionImage" src="" alt="Book Image" />
+                </div>
+                <div class="emotion-book-info">
+                  <h3 id="modalEmotionBookTitle"></h3>
+                  <p id="modalEmotionBookDesc"></p>
+                  <div class="emotion-book-price">
+                    <span id="modalEmotionCurrentPrice"></span>
+                    <span id="modalEmotionOriginalPrice"></span>
+                  </div>
+                  <div class="emotion-book-actions">
+                    <button class="btn btn-buy">
+                      <i class="fas fa-shopping-cart"></i> Thêm vào giỏ hàng
+                    </button>
+                    <button class="btn btn-buy btn-accent">
+                      <i class="fas fa-bolt"></i> Mua ngay
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Footer -->
+    <footer>
+      <div class="container">
+        <div class="footer-content">
+          <div class="footer-column">
+            <h3>Về Chúng Tôi</h3>
+            <p>
+              ĐBDK2T Điện Tử - Địa chỉ tin cậy cho các sản phẩm sách chất lượng
+              cao với giá cả hợp lý.
+            </p>
+          </div>
+
+          <div class="footer-column">
+            <h3>Liên Kết Nhanh</h3>
+            <ul class="footer-links">
+              <li><a href="index.html">Trang Chủ</a></li>
+              <li><a href="dienthoai.html">Điện Thoại</a></li>
+              <li><a href="quanao.html">Quần áo</a></li>
+              <li><a href="sach.html">Sách</a></li>
+              <li><a href="products.html">Hàng Nóng</a></li>
+            </ul>
+          </div>
+
+          <!-- Trong phần footer, cập nhật phần social links -->
+          <div class="footer-column">
+            <h3>Liên Hệ MXH</h3>
+            <div class="social-links">
+              <a href="#" class="social-link">
+                <i class="fab fa-github"></i>
+                <span>Github</span>
+              </a>
+              <a href="#" class="social-link">
+                <i class="fab fa-youtube"></i>
+                <span>Youtube</span>
+              </a>
+              <a href="#" class="social-link">
+                <i class="fab fa-tiktok"></i>
+                <span>TikTok</span>
+              </a>
+            </div>
+          </div>
+
+          <div class="footer-column">
+            <h3>Thông Tin Liên Hệ</h3>
+            <ul class="contact-info-footer">
+              <li>
+                <i class="fas fa-map-marker-alt"></i>
+                <span>504 Đại lộ Bình Dương</span>
+              </li>
+              <li>
+                <i class="fas fa-phone"></i>
+                <span>01234567890</span>
+              </li>
+              <li>
+                <i class="fas fa-envelope"></i>
+                <span>info@dbdk2tdientu.vn</span>
+              </li>
+              <li>
+                <i class="fas fa-clock"></i>
+                <span>Thứ 2 - Chủ nhật: 8:00 - 20:00</span>
+              </li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="footer-bottom">
+          <p>&copy; 2025 Khánh -Bình - Dũng. Tất cả các quyền được bảo lưu.</p>
+        </div>
+      </div>
+    </footer>
+
+    <script src="js/sach.js"></script>
+  </body>
+</html>

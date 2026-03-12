@@ -1,0 +1,610 @@
+<!DOCTYPE html>
+<html lang="vi">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Hàng Nóng</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+    />
+    <link rel="stylesheet" href="css/hangnong.css" />
+  </head>
+  <body>
+    <!-- Họa tiết trang trí -->
+    <div class="decoration-top-left"></div>
+    <div class="decoration-top-right"></div>
+    <div class="decoration-bottom-left"></div>
+    <div class="decoration-bottom-right"></div>
+
+    <!-- Header -->
+    <!-- Header -->
+    <header>
+      <div class="main-header">
+        <div class="container">
+          <div class="header-content">
+            <a href="index.html" class="logo">
+              <i class="fas fa-microchip"></i>
+              KDB
+            </a>
+
+            <nav>
+              <ul class="nav-menu">
+                <li class="nav-item">
+                  <a href="index.html" class="nav-link"
+                    ><i class="fas fa-home"></i> Trang chủ</a
+                  >
+                </li>
+                <li class="nav-item">
+                  <a href="dienthoai.html" class="nav-link"
+                    ><i class="fa-solid fa-phone"></i>Điện Thoại</a
+                  >
+                </li>
+                <li class="nav-item">
+                  <a href="laptop.html" class="nav-link"
+                    ><i class="fa-solid fa-laptop"></i>Laptop</a
+                  >
+                </li>
+                <li class="nav-item">
+                  <a href="quanao.html" class="nav-link"
+                    ><i class="fa-solid fa-shirt"></i>Quần áo</a
+                  >
+                </li>
+                <li class="nav-item">
+                  <a href="sach.html" class="nav-link"
+                    ><i class="fa-solid fa-book"></i>Sách</a
+                  >
+                </li>
+                <li class="nav-item">
+                  <a href="hangnong.html" class="nav-link active"
+                    ><i class="fa-solid fa-gun"></i>Hàng Nóng</a
+                  >
+                </li>
+                <li class="nav-item">
+                  <a href="contact.html" class="nav-link"
+                    ><i class="fa-solid fa-comment-dots"></i> Liên hệ</a
+                  >
+                </li>
+              </ul>
+            </nav>
+
+            <div class="header-actions">
+              <div class="auth-links">
+                <a href="login.html" id="login-link"
+                  ><i class="fas fa-user"></i> Đăng nhập</a
+                >
+                <a href="register.html" id="register-link"
+                  ><i class="fas fa-user-plus"></i> Đăng ký</a
+                >
+                <a href="#" id="logout-link" style="display: none"
+                  ><i class="fas fa-sign-out-alt"></i> Đăng xuất</a
+                >
+              </div>
+              <div class="header-action">
+                <i class="fas fa-heart"></i>
+              </div>
+              <div class="header-action">
+                <i class="fas fa-shopping-cart"></i>
+                <span class="cart-count">0</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Search Section -->
+      <div class="search-section">
+        <div class="container">
+          <div class="search-container">
+            <div class="search-box">
+              <i class="fas fa-search search-icon"></i>
+              <input
+                type="text"
+                class="search-input"
+                placeholder="Tìm kiếm điện thoại, laptop, từ khóa..."
+              />
+            </div>
+            <button class="search-btn">
+              <i class="fas fa-search"></i> Tìm kiếm
+            </button>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <!-- Main Content -->
+    <main class="sung-page">
+      <div class="container">
+        <!-- Page Header -->
+        <div class="page-header">
+          <h1>Đồ Chơi Súng & Kiếm</h1>
+          <p>
+            Khám phá bộ sưu tập súng và kiếm đồ chơi chất lượng cao, an toàn cho
+            trẻ em
+          </p>
+        </div>
+
+        <!-- Product Slider -->
+        <section class="product-slider">
+          <div class="slider-container">
+            <div class="slider-track">
+              <div class="slider-item">
+                <img src="#" alt="Súng AK-47 Đồ Chơi" />
+              </div>
+              <div class="slider-item">
+                <img src="#" alt="Súng Lục Đồ Chơi" />
+              </div>
+              <div class="slider-item">
+                <img src="#" alt="Kiếm Samurai" />
+              </div>
+              <div class="slider-item">
+                <img src="#" alt="Kiếm Ánh Sáng" />
+              </div>
+              <div class="slider-item">
+                <img src="#" alt="Súng Nerf" />
+              </div>
+              <div class="slider-item">
+                <img src="#" alt="Súng Bắn Đĩa" />
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <!-- Product Types -->
+        <section class="product-types">
+          <h2 class="section-title">Danh Mục Sản Phẩm</h2>
+          <div class="types-container">
+            <div class="type-item" data-type="sung">
+              <div class="type-icon">
+                <i class="fas fa-gun"></i>
+              </div>
+              <h3>Súng Đồ Chơi</h3>
+              <p>Súng mô hình đa dạng, an toàn</p>
+            </div>
+            <div class="type-item" data-type="kiem">
+              <div class="type-icon">
+                <i class="fas fa-sword"></i>
+              </div>
+              <h3>Kiếm Đồ Chơi</h3>
+              <p>Kiếm nhựa dẻo, không gây thương tích</p>
+            </div>
+            <div class="type-item" data-type="sungban">
+              <div class="type-icon">
+                <i class="fas fa-crosshairs"></i>
+              </div>
+              <h3>Súng Bắn Đạn</h3>
+              <p>Súng Nerf và đạn mềm an toàn</p>
+            </div>
+            <div class="type-item" data-type="phukien">
+              <div class="type-icon">
+                <i class="fas fa-toolbox"></i>
+              </div>
+              <h3>Phụ Kiện</h3>
+              <p>Băng đạn, nòng súng, tay cầm</p>
+            </div>
+          </div>
+        </section>
+
+        <!-- Category Filter -->
+        <section class="category-filter">
+          <h2 class="section-title">Lọc Theo Loại</h2>
+          <div class="filter-buttons">
+            <button class="filter-btn active" data-category="all">
+              Tất Cả
+            </button>
+            <button class="filter-btn" data-category="sung">Súng</button>
+            <button class="filter-btn" data-category="kiem">Kiếm</button>
+            <button class="filter-btn" data-category="sungban">Súng Bắn</button>
+            <button class="filter-btn" data-category="phukien">Phụ Kiện</button>
+          </div>
+        </section>
+
+        <!-- Sung Products -->
+        <section class="sung-products">
+          <h2 class="section-title">Sản Phẩm Nổi Bật</h2>
+
+          <!-- Sung Products -->
+          <div class="category-section" id="sung">
+            <h3 class="category-title">Súng Đồ Chơi</h3>
+            <div class="product-grid">
+              <!-- Sản phẩm 1 -->
+              <div class="product-card" data-category="sung">
+                <div class="product-image">
+                  <img src="#" alt="Súng AK-47 Đồ Chơi" />
+                  <div class="product-badge">Mới</div>
+                  <button class="btn-wishlist">
+                    <i class="far fa-heart"></i>
+                  </button>
+                </div>
+                <div class="product-info">
+                  <h3 class="product-name">Súng Đồ Chơi Mô Hình AK-47</h3>
+                  <div class="product-price">
+                    <span class="current-price">250.000₫</span>
+                    <span class="original-price">300.000₫</span>
+                  </div>
+                  <button class="btn-details" data-id="1">Xem Chi Tiết</button>
+                </div>
+              </div>
+
+              <!-- Sản phẩm 2 -->
+              <div class="product-card" data-category="sung">
+                <div class="product-image">
+                  <img src="#" alt="Súng Lục Đồ Chơi" />
+                  <div class="product-badge">Giảm giá</div>
+                  <button class="btn-wishlist">
+                    <i class="far fa-heart"></i>
+                  </button>
+                </div>
+                <div class="product-info">
+                  <h3 class="product-name">Súng Lục Đồ Chơi M1911</h3>
+                  <div class="product-price">
+                    <span class="current-price">180.000₫</span>
+                    <span class="original-price">220.000₫</span>
+                  </div>
+                  <button class="btn-details" data-id="2">Xem Chi Tiết</button>
+                </div>
+              </div>
+
+              <!-- Sản phẩm 3 -->
+              <div class="product-card" data-category="sung">
+                <div class="product-image">
+                  <img src="#" alt="Súng Cao Bồi" />
+                  <button class="btn-wishlist">
+                    <i class="far fa-heart"></i>
+                  </button>
+                </div>
+                <div class="product-info">
+                  <h3 class="product-name">Bộ Súng Cao Bồi</h3>
+                  <div class="product-price">
+                    <span class="current-price">280.000₫</span>
+                    <span class="original-price">350.000₫</span>
+                  </div>
+                  <button class="btn-details" data-id="6">Xem Chi Tiết</button>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Kiem Products -->
+          <div class="category-section" id="kiem">
+            <h3 class="category-title">Kiếm Đồ Chơi</h3>
+            <div class="product-grid">
+              <!-- Sản phẩm 4 -->
+              <div class="product-card" data-category="kiem">
+                <div class="product-image">
+                  <img src="#" alt="Kiếm Samurai" />
+                  <div class="product-badge">Mới</div>
+                  <button class="btn-wishlist">
+                    <i class="far fa-heart"></i>
+                  </button>
+                </div>
+                <div class="product-info">
+                  <h3 class="product-name">Kiếm Nhựa Samurai</h3>
+                  <div class="product-price">
+                    <span class="current-price">150.000₫</span>
+                    <span class="original-price">180.000₫</span>
+                  </div>
+                  <button class="btn-details" data-id="4">Xem Chi Tiết</button>
+                </div>
+              </div>
+
+              <!-- Sản phẩm 5 -->
+              <div class="product-card" data-category="kiem">
+                <div class="product-image">
+                  <img src="#" alt="Kiếm Ánh Sáng" />
+                  <div class="product-badge">Bán chạy</div>
+                  <button class="btn-wishlist">
+                    <i class="far fa-heart"></i>
+                  </button>
+                </div>
+                <div class="product-info">
+                  <h3 class="product-name">Kiếm Ánh Sáng Star Wars</h3>
+                  <div class="product-price">
+                    <span class="current-price">320.000₫</span>
+                    <span class="original-price">380.000₫</span>
+                  </div>
+                  <button class="btn-details" data-id="5">Xem Chi Tiết</button>
+                </div>
+              </div>
+
+              <!-- Sản phẩm 6 -->
+              <div class="product-card" data-category="kiem">
+                <div class="product-image">
+                  <img src="#" alt="Kiếm Gỗ" />
+                  <button class="btn-wishlist">
+                    <i class="far fa-heart"></i>
+                  </button>
+                </div>
+                <div class="product-info">
+                  <h3 class="product-name">Kiếm Gỗ Tập Luyện</h3>
+                  <div class="product-price">
+                    <span class="current-price">120.000₫</span>
+                    <span class="original-price">150.000₫</span>
+                  </div>
+                  <button class="btn-details" data-id="9">Xem Chi Tiết</button>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Sung Ban Products -->
+          <div class="category-section" id="sungban">
+            <h3 class="category-title">Súng Bắn Đạn</h3>
+            <div class="product-grid">
+              <!-- Sản phẩm 7 -->
+              <div class="product-card" data-category="sungban">
+                <div class="product-image">
+                  <img src="#" alt="Súng Nerf" />
+                  <div class="product-badge">Mới</div>
+                  <button class="btn-wishlist">
+                    <i class="far fa-heart"></i>
+                  </button>
+                </div>
+                <div class="product-info">
+                  <h3 class="product-name">Súng Bắn Đạn Nerf Elite</h3>
+                  <div class="product-price">
+                    <span class="current-price">450.000₫</span>
+                    <span class="original-price">550.000₫</span>
+                  </div>
+                  <button class="btn-details" data-id="3">Xem Chi Tiết</button>
+                </div>
+              </div>
+
+              <!-- Sản phẩm 8 -->
+              <div class="product-card" data-category="sungban">
+                <div class="product-image">
+                  <img src="#" alt="Súng Bắn Đĩa" />
+                  <div class="product-badge">Giảm giá</div>
+                  <button class="btn-wishlist">
+                    <i class="far fa-heart"></i>
+                  </button>
+                </div>
+                <div class="product-info">
+                  <h3 class="product-name">Súng Bắn Đĩa Bay</h3>
+                  <div class="product-price">
+                    <span class="current-price">380.000₫</span>
+                    <span class="original-price">450.000₫</span>
+                  </div>
+                  <button class="btn-details" data-id="7">Xem Chi Tiết</button>
+                </div>
+              </div>
+
+              <!-- Sản phẩm 9 -->
+              <div class="product-card" data-category="sungban">
+                <div class="product-image">
+                  <img src="#" alt="Súng Nước" />
+                  <button class="btn-wishlist">
+                    <i class="far fa-heart"></i>
+                  </button>
+                </div>
+                <div class="product-info">
+                  <h3 class="product-name">Súng Nước Automatic</h3>
+                  <div class="product-price">
+                    <span class="current-price">220.000₫</span>
+                    <span class="original-price">280.000₫</span>
+                  </div>
+                  <button class="btn-details" data-id="8">Xem Chi Tiết</button>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Phu Kien Products -->
+          <div class="category-section" id="phukien">
+            <h3 class="category-title">Phụ Kiện</h3>
+            <div class="product-grid">
+              <!-- Sản phẩm 10 -->
+              <div class="product-card" data-category="phukien">
+                <div class="product-image">
+                  <img src="#" alt="Súng Sniper" />
+                  <div class="product-badge">Bán chạy</div>
+                  <button class="btn-wishlist">
+                    <i class="far fa-heart"></i>
+                  </button>
+                </div>
+                <div class="product-info">
+                  <h3 class="product-name">Súng Đồ Chơi Sniper</h3>
+                  <div class="product-price">
+                    <span class="current-price">320.000₫</span>
+                    <span class="original-price">380.000₫</span>
+                  </div>
+                  <button class="btn-details" data-id="10">Xem Chi Tiết</button>
+                </div>
+              </div>
+
+              <!-- Sản phẩm 11 -->
+              <div class="product-card" data-category="phukien">
+                <div class="product-image">
+                  <img src="#" alt="Bộ Kiếm Hiệp Sĩ" />
+                  <div class="product-badge">Mới</div>
+                  <button class="btn-wishlist">
+                    <i class="far fa-heart"></i>
+                  </button>
+                </div>
+                <div class="product-info">
+                  <h3 class="product-name">Bộ Kiếm Hiệp Sĩ</h3>
+                  <div class="product-price">
+                    <span class="current-price">280.000₫</span>
+                    <span class="original-price">350.000₫</span>
+                  </div>
+                  <button class="btn-details" data-id="11">Xem Chi Tiết</button>
+                </div>
+              </div>
+
+              <!-- Sản phẩm 12 -->
+              <div class="product-card" data-category="phukien">
+                <div class="product-image">
+                  <img src="#" alt="Súng Bắn Bóng" />
+                  <button class="btn-wishlist">
+                    <i class="far fa-heart"></i>
+                  </button>
+                </div>
+                <div class="product-info">
+                  <h3 class="product-name">Súng Bắn Bóng Nerf</h3>
+                  <div class="product-price">
+                    <span class="current-price">350.000₫</span>
+                    <span class="original-price">420.000₫</span>
+                  </div>
+                  <button class="btn-details" data-id="12">Xem Chi Tiết</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+      </div>
+    </main>
+
+    <!-- Modal Chi Tiết Sản Phẩm -->
+    <div class="modal-overlay" id="productModal">
+      <div class="modal-content">
+        <button class="modal-close" id="modalClose">
+          <i class="fas fa-times"></i>
+        </button>
+        <div class="modal-body">
+          <div class="modal-product">
+            <div class="modal-image">
+              <img id="modalImage" src="#" alt="Product Image" />
+            </div>
+            <div class="modal-info">
+              <h2 id="modalTitle"></h2>
+              <div class="modal-price">
+                <span class="modal-current-price" id="modalCurrentPrice"></span>
+                <span
+                  class="modal-original-price"
+                  id="modalOriginalPrice"
+                ></span>
+              </div>
+              <div class="modal-accessories">
+                <h3>Phụ Kiện Đi Kèm</h3>
+                <div class="accessories-container" id="modalAccessories"></div>
+              </div>
+              <div class="modal-actions">
+                <button class="btn btn-buy">
+                  <i class="fas fa-shopping-cart"></i> Thêm vào giỏ hàng
+                </button>
+                <button class="btn btn-buy btn-accent">
+                  <i class="fas fa-bolt"></i> Mua ngay
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Modal Sản Phẩm Theo Loại -->
+    <div class="modal-overlay" id="typeModal">
+      <div class="modal-content">
+        <button class="modal-close" id="typeModalClose">
+          <i class="fas fa-times"></i>
+        </button>
+        <div class="modal-body">
+          <div class="modal-type">
+            <div class="modal-type-header">
+              <div class="type-icon-large" id="modalTypeIcon"></div>
+              <h2 id="modalTypeTitle"></h2>
+            </div>
+            <div class="modal-type-content">
+              <div class="type-product">
+                <div class="type-product-image">
+                  <img id="modalTypeImage" src="#" alt="Product Image" />
+                </div>
+                <div class="type-product-info">
+                  <h3 id="modalTypeProductTitle"></h3>
+                  <p id="modalTypeProductDesc"></p>
+                  <div class="type-product-price">
+                    <span id="modalTypeCurrentPrice"></span>
+                    <span id="modalTypeOriginalPrice"></span>
+                  </div>
+                  <div class="type-product-actions">
+                    <button class="btn btn-buy">
+                      <i class="fas fa-shopping-cart"></i> Thêm vào giỏ hàng
+                    </button>
+                    <button class="btn btn-buy btn-accent">
+                      <i class="fas fa-bolt"></i> Mua ngay
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Footer -->
+    <!-- Footer -->
+    <footer>
+      <div class="container">
+        <div class="footer-content">
+          <div class="footer-column">
+            <h3>Về Chúng Tôi</h3>
+            <p>
+              ĐBDK2T - Địa chỉ tin cậy cho các sản phẩm súng và kiếm đồ chơi
+              chất lượng cao, an toàn với giá cả hợp lý.
+            </p>
+          </div>
+
+          <div class="footer-column">
+            <h3>Liên Kết Nhanh</h3>
+            <ul class="footer-links">
+              <li><a href="index.html">Trang Chủ</a></li>
+              <li><a href="dienthoai.html">Điện Thoại</a></li>
+              <li><a href="laptop.html">Laptop</a></li>
+              <li><a href="quanao.html">Quần áo</a></li>
+              <li><a href="sung.html">Súng & Kiếm</a></li>
+              <li><a href="products.html">Hàng Nóng</a></li>
+            </ul>
+          </div>
+
+          <div class="footer-column">
+            <h3>Liên Hệ MXH</h3>
+            <div class="social-links">
+              <a href="#" class="social-link"
+                ><i class="fab fa-github"></i>Github</a
+              >
+              <a href="#" class="social-link"
+                ><i class="fab fa-youtube"></i>Youtube</a
+              >
+              <a href="#" class="social-link"
+                ><i class="fab fa-tiktok"></i>TikTok</a
+              >
+            </div>
+          </div>
+
+          <div class="footer-column">
+            <h3>Thông Tin Liên Hệ</h3>
+            <ul class="contact-info-footer">
+              <li>
+                <i class="fas fa-map-marker-alt"></i>
+                <span>504 Đại lộ Bình Dương</span>
+              </li>
+              <li>
+                <i class="fas fa-phone"></i>
+                <span>01234567890</span>
+              </li>
+              <li>
+                <i class="fas fa-envelope"></i>
+                <span>info@dbdk2tdientu.vn</span>
+              </li>
+              <li>
+                <i class="fas fa-clock"></i>
+                <span>Thứ 2 - Chủ nhật: 8:00 - 20:00</span>
+              </li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="footer-bottom">
+          <p>&copy; 2025 Khánh - Bình - Dũng. Tất cả các quyền được bảo lưu.</p>
+        </div>
+      </div>
+    </footer>
+
+    <script src="js/hangnong.js"></script>
+  </body>
+</html>

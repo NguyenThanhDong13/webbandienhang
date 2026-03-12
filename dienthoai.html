@@ -1,0 +1,490 @@
+<!DOCTYPE html>
+<html lang="vi">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Điện Thoại</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+    <link rel="stylesheet" href="css/phone.css" />
+  </head>
+  <body>
+    <!-- Họa tiết trang trí -->
+    <div class="decoration-top-left"></div>
+    <div class="decoration-top-right"></div>
+    <div class="decoration-bottom-left"></div>
+    <div class="decoration-bottom-right"></div>
+
+    <!-- Header -->
+    <header>
+      <div class="main-header">
+        <div class="container">
+          <div class="header-content">
+            <a href="index.html" class="logo">
+              <i class="fas fa-microchip"></i>
+              KDB
+            </a>
+
+            <nav>
+              <ul class="nav-menu">
+                <li class="nav-item">
+                  <a href="index.html" class="nav-link"
+                    ><i class="fas fa-home"></i> Trang chủ</a
+                  >
+                </li>
+                <li class="nav-item">
+                  <a href="dienthoai.html" class="nav-link active"
+                    ><i class="fa-solid fa-phone"></i>Điện Thoại</a
+                  >
+                </li>
+                <li class="nav-item">
+                  <a href="laptop.html" class="nav-link"
+                    ><i class="fa-solid fa-laptop"></i>Laptop</a
+                  >
+                </li>
+                <li class="nav-item">
+                  <a href="quanao.html" class="nav-link"
+                    ><i class="fa-solid fa-shirt"></i>Quần áo</a
+                  >
+                </li>
+                <li class="nav-item">
+                  <a href="sach.html" class="nav-link"
+                    ><i class="fa-solid fa-book"></i>Sách</a
+                  >
+                </li>
+                <li class="nav-item">
+                  <a href="hangnong.html" class="nav-link"
+                    ><i class="fa-solid fa-gun"></i>Hàng Nóng</a
+                  >
+                </li>
+                <li class="nav-item">
+                  <a href="contact.html" class="nav-link"
+                    ><i class="fa-solid fa-comment-dots"></i> Liên hệ</a
+                  >
+                </li>
+              </ul>
+            </nav>
+
+            <div class="header-actions">
+              <div class="auth-links">
+                <a href="login.html" id="login-link"
+                  ><i class="fas fa-user"></i> Đăng nhập</a
+                >
+                <a href="register.html" id="register-link"
+                  ><i class="fas fa-user-plus"></i> Đăng ký</a
+                >
+                <a href="#" id="logout-link" style="display: none"
+                  ><i class="fas fa-sign-out-alt"></i> Đăng xuất</a
+                >
+              </div>
+              <div class="header-action">
+                <i class="fas fa-heart"></i>
+              </div>
+              <div class="header-action">
+                <i class="fas fa-shopping-cart"></i>
+                <span class="cart-count">0</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Search Section -->
+      <div class="search-section">
+        <div class="container">
+          <div class="search-container">
+            <div class="search-box">
+              <i class="fas fa-search search-icon"></i>
+              <input
+                type="text"
+                class="search-input"
+                placeholder="Tìm kiếm điện thoại, từ khóa..."
+              />
+            </div>
+            <button class="search-btn">
+              <i class="fas fa-search"></i> Tìm kiếm
+            </button>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <!-- Main Content -->
+    <main class="phone-page">
+      <div class="container">
+        <!-- Page Header -->
+        <div class="page-header">
+          <h1>Điện Thoại Thông Minh</h1>
+          <p>Khám phá những mẫu điện thoại mới nhất với công nghệ tiên tiến</p>
+        </div>
+
+        <!-- Phone Slider -->
+        <section class="phone-slider">
+          <div class="slider-container">
+            <div class="slider-track">
+              <div class="slider-item">
+                <img src="./img/ip14-promax.png" alt="iPhone 14 Pro Max" />
+              </div>
+              <div class="slider-item">
+                <img src="./img/iphone13.png" alt="iPhone 13" />
+              </div>
+              <div class="slider-item">
+                <img src="./img/ip12.png" alt="iPhone 12" />
+              </div>
+              <div class="slider-item">
+                <img src="./img/s25.png" alt="Samsung Galaxy S25 Ultra" />
+              </div>
+              <div class="slider-item">
+                <img src="./img/xiaomi.png" alt="Xiaomi 14T" />
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <!-- Brand Filter -->
+        <section class="brand-filter">
+          <h2 class="section-title">Lọc Theo Hãng</h2>
+          <div class="filter-buttons">
+            <button class="filter-btn active" data-brand="all">Tất Cả</button>
+            <button class="filter-btn" data-brand="apple">
+              </i> Apple
+            </button>
+            <button class="filter-btn" data-brand="samsung">
+               Samsung
+            </button>
+            <button class="filter-btn" data-brand="xiaomi">
+               Xiaomi
+            </button>
+          </div>
+        </section>
+
+        <!-- Phone Products -->
+        <section class="phone-products">
+          <h2 class="section-title">Sản Phẩm Nổi Bật</h2>
+
+          <!-- Apple Products -->
+          <div class="brand-section" id="apple">
+            <h3 class="brand-title">Apple</h3>
+            <div class="product-grid">
+              <!-- iPhone 14 Pro Max -->
+              <div class="product-card" data-brand="apple">
+                <div class="product-image">
+                  <img
+                    src="https://images.unsplash.com/photo-1592750475338-74b7b21085ab?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80"
+                    alt="iPhone 14 Pro Max"
+                  />
+                  <div class="product-badge">Mới</div>
+                  <button class="btn-wishlist">
+                    <i class="far fa-heart"></i>
+                  </button>
+                </div>
+                <div class="product-info">
+                  <h3 class="product-name">iPhone 14 Pro Max</h3>
+                  <div class="product-price">
+                    <span class="current-price">28.990.000₫</span>
+                    <span class="original-price">32.990.000₫</span>
+                  </div>
+                  <button class="btn-details" data-id="1">Xem Chi Tiết</button>
+                </div>
+              </div>
+
+              <!-- iPhone 13 -->
+              <div class="product-card" data-brand="apple">
+                <div class="product-image">
+                  <img
+                    src="https://media.wired.com/photos/6149204955f7b3aea723343d/master/pass/Gear-Review-Apple_iPhone-13-Pro_Colors_09142021.jpg"
+                    alt="iPhone 13 pro max"
+                  />
+                  <div class="product-badge">Giảm giá</div>
+                  <button class="btn-wishlist">
+                    <i class="far fa-heart"></i>
+                  </button>
+                </div>
+                <div class="product-info">
+                  <h3 class="product-name">iPhone 13 Pro Max</h3>
+                  <div class="product-price">
+                    <span class="current-price">18.990.000₫</span>
+                    <span class="original-price">21.990.000₫</span>
+                  </div>
+                  <button class="btn-details" data-id="2">Xem Chi Tiết</button>
+                </div>
+              </div>
+
+              <!-- iPhone 12 -->
+              <div class="product-card" data-brand="apple">
+                <div class="product-image">
+                  <img
+                    src="https://vcdn1-sohoa.vnecdn.net/2024/11/28/iPhone-17-Pro-Dual-Tone-Rectan-5437-2950-1732807344.jpg?w=460&h=0&q=100&dpr=2&fit=crop&s=2tj8edHwbMmACQgUPFVExg"
+                    alt="iPhone 17 pro max"
+                  />
+                  <button class="btn-wishlist">
+                    <i class="far fa-heart"></i>
+                  </button>
+                </div>
+                <div class="product-info">
+                  <h3 class="product-name">iPhone 17 Pro Max</h3>
+                  <div class="product-price">
+                    <span class="current-price">61.990.000₫</span>
+                    <span class="original-price">63.990.000₫</span>
+                  </div>
+                  <button class="btn-details" data-id="3">Xem Chi Tiết</button>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Samsung Products -->
+          <div class="brand-section" id="samsung">
+            <h3 class="brand-title">Samsung</h3>
+            <div class="product-grid">
+              <!-- Samsung Galaxy S23 Ultra -->
+              <div class="product-card" data-brand="samsung">
+                <div class="product-image">
+                  <img
+                    src="https://images.unsplash.com/photo-1610945265064-0e34e5519bbf?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80"
+                    alt="Samsung Galaxy S23 Ultra"
+                  />
+                  <div class="product-badge">Mới</div>
+                  <button class="btn-wishlist">
+                    <i class="far fa-heart"></i>
+                  </button>
+                </div>
+                <div class="product-info">
+                  <h3 class="product-name">Samsung Galaxy S23 Ultra</h3>
+                  <div class="product-price">
+                    <span class="current-price">24.990.000₫</span>
+                    <span class="original-price">27.990.000₫</span>
+                  </div>
+                  <button class="btn-details" data-id="4">Xem Chi Tiết</button>
+                </div>
+              </div>
+
+              <!-- Samsung Galaxy Z Flip -->
+              <div class="product-card" data-brand="samsung">
+                <div class="product-image">
+                  <img
+                    src="https://images.samsung.com/ph/smartphones/galaxy-z-flip6/images/galaxy-z-flip6-features-kv.jpg?imbypass=true"
+                    alt="SamSung Galaxy Z Flip"
+                  />
+                  <div class="product-badge">Độc quyền</div>
+                  <button class="btn-wishlist">
+                    <i class="far fa-heart"></i>
+                  </button>
+                </div>
+                <div class="product-info">
+                  <h3 class="product-name">SamSung Galaxy Z Flip</h3>
+                  <div class="product-price">
+                    <span class="current-price">35.990.000₫</span>
+                    <span class="original-price">39.990.000₫</span>
+                  </div>
+                  <button class="btn-details" data-id="5">Xem Chi Tiết</button>
+                </div>
+              </div>
+
+              <!-- Samsung Galaxy A54 -->
+              <div class="product-card" data-brand="samsung">
+                <div class="product-image">
+                  <img
+                    src="https://tiki.vn/blog/wp-content/uploads/2023/03/OsybBeJVZxYYmDDp5lzGdafcqDY1jMGINw4M_CsiR42HJ4vRhXa37vF2tKZunf4T3tEg4E1Z4crtL6o-hruB9wwOXGvugjrkPoZVNyf3BaY9wonoZb1PW6poZosO5N0zt0rGppfmBne3mMWlSHSr3-o.png"
+                    alt="Samsung Galaxy S23"
+                  />
+                  <button class="btn-wishlist">
+                    <i class="far fa-heart"></i>
+                  </button>
+                </div>
+                <div class="product-info">
+                  <h3 class="product-name">Samsung Galaxy S23</h3>
+                  <div class="product-price">
+                    <span class="current-price">18.990.000₫</span>
+                    <span class="original-price">20.990.000₫</span>
+                  </div>
+                  <button class="btn-details" data-id="6">Xem Chi Tiết</button>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Xiaomi Products -->
+          <div class="brand-section" id="xiaomi">
+            <h3 class="brand-title">Xiaomi</h3>
+            <div class="product-grid">
+              <!-- Xiaomi 13 Pro -->
+              <div class="product-card" data-brand="xiaomi">
+                <div class="product-image">
+                  <img
+                    src="https://mihome.vn/wp-content/uploads/2023/03/Xiaomi-13-Pro-1.jpg"
+                    alt="Xiaomi 13 Pro"
+                  />
+                  <div class="product-badge">Mới</div>
+                  <button class="btn-wishlist">
+                    <i class="far fa-heart"></i>
+                  </button>
+                </div>
+                <div class="product-info">
+                  <h3 class="product-name">Xiaomi 13 Pro</h3>
+                  <div class="product-price">
+                    <span class="current-price">18.990.000₫</span>
+                    <span class="original-price">21.990.000₫</span>
+                  </div>
+                  <button class="btn-details" data-id="7">Xem Chi Tiết</button>
+                </div>
+              </div>
+
+              <!-- Xiaomi Redmi Note 12 -->
+              <div class="product-card" data-brand="xiaomi">
+                <div class="product-image">
+                  <img
+                    src="https://cdn.hoanghamobile.vn/Uploads/2023/03/25/image-removebg-preview-1.png"
+                    alt="Xiaomi Redmi Note 12"
+                  />
+                  <div class="product-badge">Bán chạy</div>
+                  <button class="btn-wishlist">
+                    <i class="far fa-heart"></i>
+                  </button>
+                </div>
+                <div class="product-info">
+                  <h3 class="product-name">Xiaomi Redmi Note 12</h3>
+                  <div class="product-price">
+                    <span class="current-price">6.490.000₫</span>
+                    <span class="original-price">7.490.000₫</span>
+                  </div>
+                  <button class="btn-details" data-id="8">Xem Chi Tiết</button>
+                </div>
+              </div>
+
+              <!-- Xiaomi Poco X5 -->
+              <div class="product-card" data-brand="xiaomi">
+                <div class="product-image">
+                  <img
+                    src="https://mihome.vn/wp-content/uploads/2023/02/Xiaomi-Poco-X5-Pro-5G-1.jpg"
+                    alt="Xiaomi Poco X5"
+                  />
+                  <button class="btn-wishlist">
+                    <i class="far fa-heart"></i>
+                  </button>
+                </div>
+                <div class="product-info">
+                  <h3 class="product-name">Xiaomi Poco X5</h3>
+                  <div class="product-price">
+                    <span class="current-price">5.990.000₫</span>
+                    <span class="original-price">6.990.000₫</span>
+                  </div>
+                  <button class="btn-details" data-id="9">Xem Chi Tiết</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+      </div>
+    </main>
+
+    <!-- Modal Chi Tiết Sản Phẩm -->
+    <div class="modal-overlay" id="productModal">
+      <div class="modal-content">
+        <button class="modal-close" id="modalClose">
+          <i class="fas fa-times"></i>
+        </button>
+        <div class="modal-body">
+          <div class="modal-product">
+            <div class="modal-image">
+              <img id="modalImage" src="" alt="Product Image" />
+            </div>
+            <div class="modal-info">
+              <h2 id="modalTitle"></h2>
+              <div class="modal-price">
+                <span class="modal-current-price" id="modalCurrentPrice"></span>
+                <span
+                  class="modal-original-price"
+                  id="modalOriginalPrice"
+                ></span>
+              </div>
+              <div class="modal-specs">
+                <h3>Thông số kỹ thuật</h3>
+                <ul id="modalSpecs"></ul>
+              </div>
+              <div class="modal-actions">
+                <button class="btn btn-buy">
+                  <i class="fas fa-shopping-cart"></i> Thêm vào giỏ hàng
+                </button>
+                <button class="btn btn-buy btn-accent">
+                  <i class="fas fa-bolt"></i> Mua ngay
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Footer -->
+    <footer>
+      <div class="container">
+        <div class="footer-content">
+          <div class="footer-column">
+            <h3>Về Chúng Tôi</h3>
+            <p>
+              ĐBDK2T - Địa chỉ tin cậy cho các sản phẩm công nghệ chất
+              lượng cao với giá cả hợp lý.
+            </p>
+          </div>
+
+          <div class="footer-column">
+            <h3>Liên Kết Nhanh</h3>
+            <ul class="footer-links">
+              <li><a href="index.html">Trang Chủ</a></li>
+              <li><a href="laptop.html">Laptop</a></li>
+              <li><a href="quanao.html">Quần áo</a></li>
+              <li><a href="sach.html">Sách</a></li>
+              <li><a href="products.html">Hàng Nóng</a></li>
+            </ul>
+          </div>
+
+          <div class="footer-column">
+            <h3>Liên Hệ MXH</h3>
+            <div class="social-links">
+              <a href="#" class="social-link"
+                ><i class="fab fa-github"></i>Github</a
+              >
+              <a href="#" class="social-link"
+                ><i class="fab fa-youtube"></i>Youtube</a
+              >
+              <a href="#" class="social-link"
+                ><i class="fab fa-tiktok"></i>TikTok</a
+              >
+            </div>
+          </div>
+
+          <div class="footer-column">
+            <h3>Thông Tin Liên Hệ</h3>
+            <ul class="contact-info-footer">
+              <li>
+                <i class="fas fa-map-marker-alt"></i>
+                <span>504 Đại lộ Bình Dương</span>
+              </li>
+              <li>
+                <i class="fas fa-phone"></i>
+                <span>01234567890</span>
+              </li>
+              <li>
+                <i class="fas fa-envelope"></i>
+                <span>info@dbdk2tdientu.vn</span>
+              </li>
+              <li>
+                <i class="fas fa-clock"></i>
+                <span>Thứ 2 - Chủ nhật: 8:00 - 20:00</span>
+              </li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="footer-bottom">
+          <p>&copy; 2025 Khánh - Bình - Dũng. Tất cả các quyền được bảo lưu.</p>
+        </div>
+      </div>
+    </footer>
+
+    <script src="js/phone.js"></script>
+  </body>
+</html>
