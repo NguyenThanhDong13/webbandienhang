@@ -202,6 +202,37 @@ nav {
   justify-content: space-between;
 }
 
+/* Mobile menu - ẩn menu mặc định trên mobile */
+@media (max-width: 768px) {
+  .nav-menu {
+    display: none;
+    flex-direction: column;
+    background: #8a5a33;
+    position: absolute;
+    top: 70px;
+    left: 0;
+    width: 100%;
+    padding: 15px;
+    border-radius: 12px;
+  }
+  
+  .nav-menu.active {
+    display: flex;
+  }
+  
+  .nav-item {
+    margin: 8px 0;
+  }
+  
+  .nav-link {
+    display: block;
+    padding: 12px;
+    border-radius: 8px;
+    background: #a47a55;
+    color: white;
+  }
+}
+
 .nav-item {
   position: relative;
   flex: 1;

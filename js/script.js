@@ -198,4 +198,28 @@ document.addEventListener("DOMContentLoaded", function () {
     }
   `;
   document.head.appendChild(style);
+  
 });
+
+document.addEventListener("DOMContentLoaded", function () {
+
+  const menuBtn = document.querySelector(".menu-toggle");
+  const menu = document.querySelector(".nav-menu");
+
+  if(menuBtn && menu){
+
+    menuBtn.addEventListener("click", () => {
+      menu.classList.toggle("active");
+    });
+
+    document.querySelectorAll(".nav-link").forEach(link => {
+      link.addEventListener("click", () => {
+        menu.classList.remove("active");
+      });
+    });
+
+  }
+
+});
+
+
