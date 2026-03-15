@@ -1,7 +1,7 @@
 /* ===== Fix mobile layout ===== */
 
 *{
-box-sizing:border-box;
+ box-sizing:border-box;
 }
 
 body{
@@ -16,7 +16,7 @@ overflow-x:hidden;
 width:100%;
 max-width:1200px;
 margin:auto;
-padding:10px;
+padding:0 15px;
 }
 
 /* ===== image fix ===== */
@@ -28,22 +28,47 @@ height:auto;
 
 /* ===== search box ===== */
 
-.search-box{
-display:flex;
-flex-direction:column;
-align-items:center;
-gap:10px;
+.search-section {
+  padding: 15px 10px !important;
 }
 
-.search-box input{
-width:90%;
-padding:10px;
-border-radius:20px;
+.search-container {
+  width: 100%;
+  padding: 0 5px;
 }
 
-.search-box button{
-width:60%;
-padding:10px;
+.search-box {
+  width: 100% !important;
+  max-width: 100% !important;
+  flex: none !important;
+}
+
+.search-input {
+  width: 100% !important;
+  padding: 12px 40px 12px 45px !important;
+  font-size: 14px !important;
+  border-radius: 25px !important;
+}
+
+.search-icon {
+  left: 15px !important;
+  font-size: 16px !important;
+}
+
+.search-clear {
+  right: 12px !important;
+}
+
+.search-btn {
+  width: 100% !important;
+  padding: 12px 20px !important;
+  font-size: 14px !important;
+  justify-content: center !important;
+  border-radius: 25px !important;
+}
+
+.search-btn i {
+  font-size: 14px !important;
 }
 
 /* ===== banner ===== */
@@ -103,14 +128,6 @@ align-items:center;
 grid-template-columns:1fr;
 }
 
-.search-box input{
-width:95%;
-}
-
-.search-box button{
-width:80%;
-}
-
 }
 
 /* ===== Small phone ===== */
@@ -123,6 +140,16 @@ font-size:14px;
 
 .menu li{
 font-size:13px;
+}
+
+.search-input {
+  padding: 10px 35px 10px 40px !important;
+  font-size: 13px !important;
+}
+
+.search-btn {
+  padding: 10px 16px !important;
+  font-size: 13px !important;
 }
 
 }
@@ -216,28 +243,44 @@ position:relative !important;
 
 /* ===== Mobile menu ===== */
 
-@media (max-width:768px){
+@media (max-width: 768px) {
 
 /* header xếp dọc */
 .header-content{
 flex-direction:column;
 align-items:center;
-gap:10px;
+gap:15px;
+padding: 10px;
 }
 
-/* menu thành dạng box */
+/* logo */
+.logo {
+  font-size: 20px;
+  padding: 8px 14px;
+}
+
+/* menu thành dạng box đẹp */
 .nav-menu{
-flex-direction:column;
-width:90%;
-background:#8a5a33;
-border-radius:12px;
-padding:10px;
-margin:10px auto;
+flex-direction:row;
+flex-wrap:nowrap;
+justify-content:flex-start;
+width:100%;
+overflow-x:auto;
+-webkit-overflow-scrolling:touch;
+background: linear-gradient(135deg, rgba(101, 67, 33, 0.95) 0%, rgba(139, 69, 19, 0.95) 100%);
+border-radius:25px;
+padding:8px 10px;
+margin:5px 0;
+scrollbar-width: none;
+}
+
+.nav-menu::-webkit-scrollbar {
+  display: none;
 }
 
 /* item menu */
 .nav-item{
-width:100%;
+flex: 0 0 auto;
 }
 
 /* link menu */
@@ -245,24 +288,80 @@ width:100%;
 display:flex;
 justify-content:center;
 align-items:center;
-gap:8px;
-padding:10px;
-background:#a47a55;
-border-radius:8px;
+gap:6px;
+padding:10px 14px;
+background: rgba(255, 255, 255, 0.1);
+border-radius:20px;
+font-size: 13px;
+white-space: nowrap;
+color: rgba(255, 255, 255, 0.9);
+transition: all 0.3s ease;
 }
 
-/* search mobile */
-.search-box{
-flex-direction:column;
-gap:10px;
+.nav-link:hover {
+  background: rgba(255, 255, 255, 0.2);
+  color: white;
 }
 
-.search-box input{
-width:90%;
+.nav-link i {
+  font-size: 12px;
+  margin-right: 4px;
 }
 
-.search-btn{
-width:120px;
+/* Header actions - đặt bên dưới menu */
+.header-actions {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  width: 100%;
+  padding: 10px 0;
+  margin-top: 5px;
+}
+
+/* Auth links - hiện dạng icon trên mobile */
+.auth-links {
+  display: flex;
+  gap: 8px;
+}
+
+.auth-links a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 8px 12px;
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 20px;
+  color: white;
+  font-size: 12px;
+  white-space: nowrap;
+  transition: all 0.3s ease;
+}
+
+.auth-links a:hover {
+  background: rgba(255, 255, 255, 0.2);
+}
+
+.auth-links a i {
+  margin-right: 5px;
+  font-size: 12px;
+}
+
+.header-action {
+  padding: 8px 10px;
+}
+
+/* Ẩn chữ, chỉ hiện icon trên mobile nhỏ */
+@media (max-width: 480px) {
+  .auth-links a span,
+  .auth-links a:not(:has(i)) {
+    display: none;
+  }
+  
+  .auth-links a {
+    padding: 8px;
+    border-radius: 50%;
+  }
 }
 
 }
@@ -321,4 +420,3 @@ width:120px;
 }
 
 }
-

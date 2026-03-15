@@ -1,0 +1,429 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Liên Hệ - KDB</title>
+  <link rel="stylesheet" href="css/styles.css">
+  <link rel="stylesheet" href="css/responsive.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <style>
+    .contact-page {
+      padding: 60px 0;
+      min-height: 60vh;
+    }
+    .contact-container {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 40px;
+      margin-top: 40px;
+    }
+    .contact-info {
+      background: white;
+      padding: 30px;
+      border-radius: 12px;
+      box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+    }
+    .contact-info h2 {
+      color: var(--dark);
+      margin-bottom: 25px;
+      font-size: 28px;
+    }
+    .contact-item {
+      display: flex;
+      align-items: center;
+      margin-bottom: 20px;
+      padding: 15px;
+      background: var(--light);
+      border-radius: 8px;
+    }
+    .contact-item i {
+      width: 50px;
+      height: 50px;
+      background: var(--primary);
+      color: white;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      border-radius: 50%;
+      font-size: 20px;
+      margin-right: 15px;
+    }
+    .contact-item .info h4 {
+      color: var(--dark);
+      margin-bottom: 5px;
+      font-size: 16px;
+    }
+    .contact-item .info p {
+      color: var(--gray);
+      font-size: 14px;
+      margin: 0;
+    }
+    .contact-form {
+      background: white;
+      padding: 30px;
+      border-radius: 12px;
+      box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+    }
+    .contact-form h2 {
+      color: var(--dark);
+      margin-bottom: 25px;
+      font-size: 28px;
+    }
+    .form-group {
+      margin-bottom: 20px;
+    }
+    .form-group label {
+      display: block;
+      margin-bottom: 8px;
+      color: var(--dark);
+      font-weight: 600;
+    }
+    .form-group input,
+    .form-group textarea {
+      width: 100%;
+      padding: 12px 15px;
+      border: 2px solid #ddd;
+      border-radius: 8px;
+      font-size: 14px;
+      transition: all 0.3s;
+    }
+    .form-group input:focus,
+    .form-group textarea:focus {
+      border-color: var(--primary);
+      outline: none;
+    }
+    .form-group textarea {
+      min-height: 150px;
+      resize: vertical;
+    }
+    .btn-submit {
+      background: var(--primary);
+      color: white;
+      padding: 14px 30px;
+      border: none;
+      border-radius: 8px;
+      font-size: 16px;
+      font-weight: 600;
+      cursor: pointer;
+      transition: all 0.3s;
+    }
+    .btn-submit:hover {
+      background: var(--dark);
+      transform: translateY(-2px);
+    }
+    .social-links-contact {
+      display: flex;
+      gap: 15px;
+      margin-top: 25px;
+    }
+    .social-links-contact a {
+      width: 45px;
+      height: 45px;
+      background: var(--primary);
+      color: white;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      border-radius: 50%;
+      font-size: 18px;
+      transition: all 0.3s;
+    }
+    .social-links-contact a:hover {
+      background: var(--dark);
+      transform: scale(1.1);
+    }
+    @media (max-width: 768px) {
+      .contact-container {
+        grid-template-columns: 1fr;
+      }
+    }
+  </style>
+</head>
+<body>
+  <!-- Họa tiết trang trí -->
+  <div class="decoration-top-left"></div>
+  <div class="decoration-top-right"></div>
+  <div class="decoration-bottom-left"></div>
+  <div class="decoration-bottom-right"></div>
+
+  <!-- Header -->
+  <header>
+    <div class="main-header">
+      <div class="container">
+        <div class="header-content">
+          <button class="menu-toggle">
+            <i class="fas fa-bars"></i>
+          </button>
+          <a href="index.html" class="logo">
+            <i class="fas fa-microchip"></i>
+            KDB
+          </a>
+
+          <nav>
+            <ul class="nav-menu">
+              <li class="nav-item">
+                <a href="index.html" class="nav-link"
+                  ><i class="fas fa-home"></i> Trang chủ</a
+                >
+              </li>
+              <li class="nav-item">
+                <a href="dienthoai.html" class="nav-link"
+                  ><i class="fa-solid fa-phone"></i>Điện Thoại</a
+                >
+              </li>
+              <li class="nav-item">
+                <a href="laptop.html" class="nav-link"
+                  ><i class="fa-solid fa-laptop"></i>Laptop</a
+                >
+              </li>
+              <li class="nav-item">
+                <a href="quanao.html" class="nav-link"
+                  ><i class="fa-solid fa-shirt"></i>Quần áo</a
+                >
+              </li>
+              <li class="nav-item">
+                <a href="sach.html" class="nav-link"
+                  ><i class="fa-solid fa-book"></i>Sách</a
+                >
+              </li>
+              <li class="nav-item">
+                <a href="hangnong.html" class="nav-link"
+                  ><i class="fa-solid fa-gun"></i>Hàng Nóng</a
+                >
+              </li>
+              <li class="nav-item">
+                <a href="contact.html" class="nav-link active"
+                  ><i class="fa-solid fa-comment-dots"></i> Liên hệ</a
+                >
+              </li>
+            </ul>
+          </nav>
+
+          <div class="header-actions">
+            <div class="auth-links">
+              <a href="login.html"
+                ><i class="fas fa-user"></i> Đăng nhập</a
+              >
+              <a href="register.html"
+                ><i class="fas fa-user-plus"></i> Đăng ký</a
+              >
+            </div>
+            <div class="header-action" id="wishlistBtn" style="cursor: pointer;">
+              <i class="fas fa-heart"></i>
+            </div>
+            <div class="header-action" id="cartBtn" style="cursor: pointer;">
+              <i class="fas fa-shopping-cart"></i>
+              <span class="cart-count">0</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Search Section -->
+    <div class="search-section">
+      <div class="container">
+        <div class="search-container">
+          <div class="search-box">
+            <input
+              type="text"
+              class="search-input"
+              placeholder="Tìm kiếm sản phẩm..."
+            />
+            <i class="fas fa-search search-icon"></i>
+          </div>
+          <button class="search-btn">
+            <i class="fas fa-search"></i> Tìm kiếm
+          </button>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <!-- Contact Page -->
+  <section class="contact-page">
+    <div class="container">
+      <h1 class="section-title">Liên Hệ Với Chúng Tôi</h1>
+      
+      <div class="contact-container">
+        <!-- Thông tin liên hệ -->
+        <div class="contact-info">
+          <h2>Thông Tin Liên Hệ</h2>
+          
+          <div class="contact-item">
+            <i class="fas fa-map-marker-alt"></i>
+            <div class="info">
+              <h4>Địa chỉ</h4>
+              <p>504 Đại lộ Bình Dương, TP. Hồ Chí Minh</p>
+            </div>
+          </div>
+          
+          <div class="contact-item">
+            <i class="fas fa-phone"></i>
+            <div class="info">
+              <h4>Điện thoại</h4>
+              <p>0123 456 7890</p>
+            </div>
+          </div>
+          
+          <div class="contact-item">
+            <i class="fas fa-envelope"></i>
+            <div class="info">
+              <h4>Email</h4>
+              <p>info@dbdk2tdientu.vn</p>
+            </div>
+          </div>
+          
+          <div class="contact-item">
+            <i class="fas fa-clock"></i>
+            <div class="info">
+              <h4>Giờ mở cửa</h4>
+              <p>Thứ 2 - Chủ nhật: 8:00 - 20:00</p>
+            </div>
+          </div>
+          
+          <h3 style="margin-top: 25px; margin-bottom: 15px; color: var(--dark);">Mạng xã hội</h3>
+          <div class="social-links-contact">
+            <a href="#"><i class="fab fa-facebook-f"></i></a>
+            <a href="#"><i class="fab fa-youtube"></i></a>
+            <a href="#"><i class="fab fa-tiktok"></i></a>
+            <a href="#"><i class="fab fa-instagram"></i></a>
+          </div>
+        </div>
+        
+        <!-- Form liên hệ -->
+        <div class="contact-form">
+          <h2>Gửi Tin Nhắn Cho Chúng Tôi</h2>
+          
+          <form id="contactForm">
+            <div class="form-group">
+              <label for="name">Họ và tên</label>
+              <input type="text" id="name" name="name" placeholder="Nhập họ và tên của bạn" required>
+            </div>
+            
+            <div class="form-group">
+              <label for="email">Email</label>
+              <input type="email" id="email" name="email" placeholder="Nhập địa chỉ email" required>
+            </div>
+            
+            <div class="form-group">
+              <label for="phone">Số điện thoại</label>
+              <input type="tel" id="phone" name="phone" placeholder="Nhập số điện thoại">
+            </div>
+            
+            <div class="form-group">
+              <label for="subject">Tiêu đề</label>
+              <input type="text" id="subject" name="subject" placeholder="Nhập tiêu đề" required>
+            </div>
+            
+            <div class="form-group">
+              <label for="message">Nội dung</label>
+              <textarea id="message" name="message" placeholder="Nhập nội dung tin nhắn..." required></textarea>
+            </div>
+            
+            <button type="submit" class="btn-submit">
+              <i class="fas fa-paper-plane"></i> Gửi tin nhắn
+            </button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <div class="container">
+      <div class="footer-content">
+        <div class="footer-column">
+          <h3>Về ĐBDK2T</h3>
+          <p>
+            ĐBDK2T - Nơi cung cấp các sản phẩm điện tử chính hãng với giá cả
+            cạnh tranh và dịch vụ hậu mãi tốt nhất.
+          </p>
+        </div>
+        <div class="footer-column">
+          <h3>Liên Kết Nhanh</h3>
+          <ul class="footer-links">
+            <li><a href="dienthoai.html">Điện Thoại</a></li>
+            <li><a href="laptop.html">Laptop</a></li>
+            <li><a href="quanao.html">Quần áo</a></li>
+            <li><a href="sach.html">Sách</a></li>
+            <li><a href="hangnong.html">Hàng Nóng</a></li>
+          </ul>
+        </div>
+        <div class="footer-column">
+          <h3>Liên Hệ MXH</h3>
+          <div class="social-links">
+            <a href="#" class="social-link"
+              ><i class="fab fa-github"></i>Github</a
+            >
+            <a href="#" class="social-link"
+              ><i class="fab fa-youtube"></i>Youtube</a
+            >
+            <a href="#" class="social-link"
+              ><i class="fab fa-tiktok"></i>TikTok</a
+            >
+          </div>
+        </div>
+        <div class="footer-column">
+          <h3>Thông Tin Liên Hệ</h3>
+          <ul class="contact-info-footer">
+            <li>
+              <i class="fas fa-map-marker-alt"></i>
+              <span>504 Đại lộ Bình Dương</span>
+            </li>
+            <li>
+              <i class="fas fa-phone"></i>
+              <span>01234567890</span>
+            </li>
+            <li>
+              <i class="fas fa-envelope"></i>
+              <span>info@dbdk2tdientu.vn</span>
+            </li>
+            <li>
+              <i class="fas fa-clock"></i>
+              <span>Thứ 2 - Chủ nhật: 8:00 - 20:00</span>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; 2023 Khánh - Bình - Dũng. Tất cả các quyền được bảo lưu.</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/script.js"></script>
+  <script>
+    // Xử lý form liên hệ
+    document.getElementById('contactForm').addEventListener('submit', function(e) {
+      e.preventDefault();
+      
+      const name = document.getElementById('name').value;
+      const email = document.getElementById('email').value;
+      const subject = document.getElementById('subject').value;
+      const message = document.getElementById('message').value;
+      
+      alert(`Cảm ơn ${name}!\n\nChúng tôi đã nhận được tin nhắn của bạn với tiêu đề: "${subject}".\n\nChúng tôi sẽ liên hệ lại qua email ${email} sớm nhất có thể.`);
+      
+      this.reset();
+    });
+    
+    // Xử lý nút yêu thích trong header
+    document.getElementById('wishlistBtn').addEventListener('click', function() {
+      alert('Danh sách yêu thích của bạn đang trống.\nHãy click vào icon trái tim trên sản phẩm để thêm vào yêu thích!');
+    });
+    
+    // Xử lý nút giỏ hàng trong header
+    document.getElementById('cartBtn').addEventListener('click', function() {
+      const cartCount = parseInt(document.querySelector('.cart-count').textContent);
+      if (cartCount === 0) {
+        alert('Giỏ hàng của bạn đang trống!\nHãy thêm sản phẩm vào giỏ hàng trước.');
+      } else {
+        alert('Bạn có ' + cartCount + ' sản phẩm trong giỏ hàng.');
+      }
+    });
+  </script>
+</body>
+</html>

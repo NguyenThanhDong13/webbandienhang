@@ -1,0 +1,466 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Giỏ Hàng - KDB</title>
+  <link rel="stylesheet" href="css/styles.css">
+  <link rel="stylesheet" href="css/responsive.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <style>
+    .cart-page {
+      padding: 60px 0;
+      min-height: 60vh;
+    }
+    .cart-container {
+      display: grid;
+      grid-template-columns: 2fr 1fr;
+      gap: 30px;
+    }
+    .cart-items {
+      background: white;
+      border-radius: 12px;
+      padding: 20px;
+      box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+    }
+    .cart-item {
+      display: flex;
+      align-items: center;
+      padding: 15px;
+      border-bottom: 1px solid #eee;
+    }
+    .cart-item:last-child {
+      border-bottom: none;
+    }
+    .cart-item-image {
+      width: 100px;
+      height: 100px;
+      object-fit: cover;
+      border-radius: 8px;
+      margin-right: 15px;
+    }
+    .cart-item-info {
+      flex: 1;
+    }
+    .cart-item-name {
+      font-size: 16px;
+      font-weight: 600;
+      color: var(--dark);
+      margin-bottom: 5px;
+    }
+    .cart-item-price {
+      font-size: 18px;
+      color: var(--primary);
+      font-weight: 700;
+    }
+    .cart-item-quantity {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+    }
+    .quantity-btn {
+      width: 30px;
+      height: 30px;
+      border: 1px solid #ddd;
+      background: white;
+      border-radius: 5px;
+      cursor: pointer;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+    .quantity-btn:hover {
+      background: var(--light);
+    }
+    .cart-item-remove {
+      color: #e74c3c;
+      cursor: pointer;
+      font-size: 18px;
+      padding: 10px;
+    }
+    .cart-summary {
+      background: white;
+      border-radius: 12px;
+      padding: 20px;
+      box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+      height: fit-content;
+    }
+    .cart-summary h3 {
+      color: var(--dark);
+      margin-bottom: 20px;
+      font-size: 20px;
+    }
+    .summary-row {
+      display: flex;
+      justify-content: space-between;
+      margin-bottom: 15px;
+      font-size: 14px;
+    }
+    .summary-total {
+      font-size: 18px;
+      font-weight: 700;
+      color: var(--primary);
+      border-top: 2px solid #eee;
+      padding-top: 15px;
+      margin-top: 15px;
+    }
+    .checkout-btn {
+      width: 100%;
+      background: var(--primary);
+      color: white;
+      padding: 15px;
+      border: none;
+      border-radius: 8px;
+      font-size: 16px;
+      font-weight: 600;
+      cursor: pointer;
+      margin-top: 20px;
+      transition: all 0.3s;
+    }
+    .checkout-btn:hover {
+      background: var(--dark);
+    }
+    .empty-cart {
+      text-align: center;
+      padding: 60px 20px;
+    }
+    .empty-cart i {
+      font-size: 80px;
+      color: #ddd;
+      margin-bottom: 20px;
+    }
+    .empty-cart h3 {
+      color: var(--dark);
+      margin-bottom: 10px;
+    }
+    .empty-cart p {
+      color: var(--gray);
+      margin-bottom: 20px;
+    }
+    .continue-shopping {
+      display: inline-block;
+      background: var(--primary);
+      color: white;
+      padding: 12px 25px;
+      border-radius: 8px;
+      text-decoration: none;
+      transition: all 0.3s;
+    }
+    .continue-shopping:hover {
+      background: var(--dark);
+    }
+    @media (max-width: 768px) {
+      .cart-container {
+        grid-template-columns: 1fr;
+      }
+      .cart-item {
+        flex-wrap: wrap;
+      }
+      .cart-item-image {
+        width: 80px;
+        height: 80px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <!-- Họa tiết trang trí -->
+  <div class="decoration-top-left"></div>
+  <div class="decoration-top-right"></div>
+  <div class="decoration-bottom-left"></div>
+  <div class="decoration-bottom-right"></div>
+
+  <!-- Header -->
+  <header>
+    <div class="main-header">
+      <div class="container">
+        <div class="header-content">
+          <button class="menu-toggle">
+            <i class="fas fa-bars"></i>
+          </button>
+          <a href="index.html" class="logo">
+            <i class="fas fa-microchip"></i>
+            KDB
+          </a>
+
+          <nav>
+            <ul class="nav-menu">
+              <li class="nav-item">
+                <a href="index.html" class="nav-link"
+                  ><i class="fas fa-home"></i> Trang chủ</a
+                >
+              </li>
+              <li class="nav-item">
+                <a href="dienthoai.html" class="nav-link"
+                  ><i class="fa-solid fa-phone"></i>Điện Thoại</a
+                >
+              </li>
+              <li class="nav-item">
+                <a href="laptop.html" class="nav-link"
+                  ><i class="fa-solid fa-laptop"></i>Laptop</a
+                >
+              </li>
+              <li class="nav-item">
+                <a href="quanao.html" class="nav-link"
+                  ><i class="fa-solid fa-shirt"></i>Quần áo</a
+                >
+              </li>
+              <li class="nav-item">
+                <a href="sach.html" class="nav-link"
+                  ><i class="fa-solid fa-book"></i>Sách</a
+                >
+              </li>
+              <li class="nav-item">
+                <a href="hangnong.html" class="nav-link"
+                  ><i class="fa-solid fa-gun"></i>Hàng Nóng</a
+                >
+              </li>
+              <li class="nav-item">
+                <a href="contact.html" class="nav-link"
+                  ><i class="fa-solid fa-comment-dots"></i> Liên hệ</a
+                >
+              </li>
+            </ul>
+          </nav>
+
+          <div class="header-actions">
+            <div class="auth-links">
+              <a href="login.html"
+                ><i class="fas fa-user"></i> Đăng nhập</a
+              >
+              <a href="register.html"
+                ><i class="fas fa-user-plus"></i> Đăng ký</a
+              >
+            </div>
+            <div class="header-action" onclick="viewCart()" style="cursor: pointer;">
+              <i class="fas fa-shopping-cart"></i>
+              <span class="cart-count">0</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Search Section -->
+    <div class="search-section">
+      <div class="container">
+        <div class="search-container">
+          <div class="search-box">
+            <input
+              type="text"
+              class="search-input"
+              placeholder="Tìm kiếm sản phẩm..."
+            />
+            <i class="fas fa-search search-icon"></i>
+          </div>
+          <button class="search-btn">
+            <i class="fas fa-search"></i> Tìm kiếm
+          </button>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <!-- Cart Page -->
+  <section class="cart-page">
+    <div class="container">
+      <h1 class="section-title">Giỏ Hàng Của Bạn</h1>
+      
+      <div id="cartContent">
+        <!-- Cart content will be loaded here -->
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <div class="container">
+      <div class="footer-content">
+        <div class="footer-column">
+          <h3>Về ĐBDK2T</h3>
+          <p>
+            ĐBDK2T - Nơi cung cấp các sản phẩm điện tử chính hãng với giá cả
+            cạnh tranh và dịch vụ hậu mãi tốt nhất.
+          </p>
+        </div>
+        <div class="footer-column">
+          <h3>Liên Kết Nhanh</h3>
+          <ul class="footer-links">
+            <li><a href="dienthoai.html">Điện Thoại</a></li>
+            <li><a href="laptop.html">Laptop</a></li>
+            <li><a href="quanao.html">Quần áo</a></li>
+            <li><a href="sach.html">Sách</a></li>
+            <li><a href="hangnong.html">Hàng Nóng</a></li>
+          </ul>
+        </div>
+        <div class="footer-column">
+          <h3>Liên Hệ MXH</h3>
+          <div class="social-links">
+            <a href="#" class="social-link"
+              ><i class="fab fa-github"></i>Github</a
+            >
+            <a href="#" class="social-link"
+              ><i class="fab fa-youtube"></i>Youtube</a
+            >
+            <a href="#" class="social-link"
+              ><i class="fab fa-tiktok"></i>TikTok</a
+            >
+          </div>
+        </div>
+        <div class="footer-column">
+          <h3>Thông Tin Liên Hệ</h3>
+          <ul class="contact-info-footer">
+            <li>
+              <i class="fas fa-map-marker-alt"></i>
+              <span>504 Đại lộ Bình Dương</span>
+            </li>
+            <li>
+              <i class="fas fa-phone"></i>
+              <span>01234567890</span>
+            </li>
+            <li>
+              <i class="fas fa-envelope"></i>
+              <span>info@dbdk2tdientu.vn</span>
+            </li>
+            <li>
+              <i class="fas fa-clock"></i>
+              <span>Thứ 2 - Chủ nhật: 8:00 - 20:00</span>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; 2023 Khánh - Bình - Dũng. Tất cả các quyền được bảo lưu.</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/script.js"></script>
+  <script>
+    // Dữ liệu sản phẩm mẫu
+    const allProducts = {
+      1: { id: 1, name: "iPhone 14 Pro Max", price: 28990000, image: "https://cdn.xtmobile.vn/vnt_upload/product/05_2024/thiet-ke-iphone-17-pro-max-xtmobile.jpg" },
+      2: { id: 2, name: "MacBook Pro M2 14 inch", price: 48990000, image: "https://maytinhshop.com/wp-content/uploads/2019/04/Macbook-Pro-14-inch-M2-Pro-ram-32GB-Ssd-1TB.jpg" },
+      3: { id: 3, name: "iPad Pro 12.9 inch M2", price: 35990000, image: "https://www.apple.com/newsroom/images/product/ipad/standard/Apple-iPad-Pro-Magic-Keyboard-M2-hero-2up-221018.jpg.landing-big_2x.jpg" },
+      4: { id: 4, name: "Apple Watch Series 8", price: 12990000, image: "https://cdn.hoanghamobile.vn/Uploads/2024/06/20/apple-watch-series-8-12.jpg" },
+      5: { id: 5, name: "Asus ROG Strix Scar", price: 130990000, image: "https://cdn-media.sforum.vn/storage/app/media/bookgrinder/10-laptop-doanh-nhan-game-thu-ces-2025-8.jpg" },
+      6: { id: 6, name: "RTX 5090 32GB", price: 12990000, image: "https://images2.thanhnien.vn/528068263637045248/2024/5/30/hacznwupeqqaswfs7lz4dc-1717079816597-17170798171761507917776.jpg" }
+    };
+
+    // Lấy giỏ hàng từ localStorage
+    function getCart() {
+      const cart = localStorage.getItem('cart');
+      return cart ? JSON.parse(cart) : [];
+    }
+
+    // Hiển thị giỏ hàng
+    function displayCart() {
+      const cart = getCart();
+      const cartContent = document.getElementById('cartContent');
+      
+      if (cart.length === 0) {
+        cartContent.innerHTML = `
+          <div class="empty-cart">
+            <i class="fas fa-shopping-cart"></i>
+            <h3>Giỏ hàng trống</h3>
+            <p>Bạn chưa có sản phẩm nào trong giỏ hàng</p>
+            <a href="index.html" class="continue-shopping">
+              <i class="fas fa-arrow-left"></i> Tiếp tục mua sắm
+            </a>
+          </div>
+        `;
+        return;
+      }
+
+      let cartHTML = '<div class="cart-container"><div class="cart-items">';
+      let total = 0;
+
+      cart.forEach((item, index) => {
+        const product = allProducts[item.id] || { name: "Sản phẩm", price: 0, image: "https://via.placeholder.com/100" };
+        const itemTotal = product.price * item.quantity;
+        total += itemTotal;
+
+        cartHTML += `
+          <div class="cart-item">
+            <img src="${product.image}" alt="${product.name}" class="cart-item-image">
+            <div class="cart-item-info">
+              <div class="cart-item-name">${product.name}</div>
+              <div class="cart-item-price">${formatPrice(product.price)}</div>
+              <div class="cart-item-quantity">
+                <button class="quantity-btn" onclick="updateQuantity(${index}, -1)">-</button>
+                <span>${item.quantity}</span>
+                <button class="quantity-btn" onclick="updateQuantity(${index}, 1)">+</button>
+              </div>
+            </div>
+            <div class="cart-item-remove" onclick="removeFromCart(${index})">
+              <i class="fas fa-trash"></i>
+            </div>
+          </div>
+        `;
+      });
+
+      cartHTML += '</div><div class="cart-summary"><h3>Tổng cộng</h3>';
+      cartHTML += `<div class="summary-row"><span>Tạm tính:</span><span>${formatPrice(total)}</span></div>`;
+      cartHTML += `<div class="summary-row"><span>Phí vận chuyển:</span><span>Miễn phí</span></div>`;
+      cartHTML += `<div class="summary-row summary-total"><span>Tổng:</span><span>${formatPrice(total)}</span></div>`;
+      cartHTML += `<button class="checkout-btn" onclick="checkout()"><i class="fas fa-credit-card"></i> Thanh toán</button></div></div>`;
+
+      cartContent.innerHTML = cartHTML;
+    }
+
+    // Cập nhật số lượng
+    function updateQuantity(index, change) {
+      let cart = getCart();
+      cart[index].quantity += change;
+      if (cart[index].quantity <= 0) {
+        cart.splice(index, 1);
+      }
+      localStorage.setItem('cart', JSON.stringify(cart));
+      displayCart();
+      updateCartCount();
+    }
+
+    // Xóa sản phẩm
+    function removeFromCart(index) {
+      let cart = getCart();
+      cart.splice(index, 1);
+      localStorage.setItem('cart', JSON.stringify(cart));
+      displayCart();
+      updateCartCount();
+    }
+
+    // Thanh toán
+    function checkout() {
+      alert('Cảm ơn bạn đã mua hàng!\\nChúng tôi sẽ liên hệ để xác nhận đơn hàng.');
+      localStorage.removeItem('cart');
+      displayCart();
+      updateCartCount();
+    }
+
+    // Định dạng giá tiền
+    function formatPrice(price) {
+      return price.toLocaleString('vi-VN') + '₫';
+    }
+
+    // Cập nhật số lượng trong header
+    function updateCartCount() {
+      const cart = getCart();
+      const totalItems = cart.reduce((sum, item) => sum + item.quantity, 0);
+      document.querySelectorAll('.cart-count').forEach(el => {
+        el.textContent = totalItems;
+      });
+    }
+
+    // Xem giỏ hàng (từ header)
+    function viewCart() {
+      window.location.href = 'cart.html';
+    }
+
+    // Khởi tạo
+    document.addEventListener('DOMContentLoaded', function() {
+      displayCart();
+      updateCartCount();
+    });
+  </script>
+</body>
+</html>

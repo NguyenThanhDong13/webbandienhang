@@ -83,10 +83,10 @@ href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
                   ><i class="fas fa-sign-out-alt"></i> Đăng xuất</a
                 >
               </div>
-              <div class="header-action">
+              <div class="header-action" onclick="viewWishlist()" style="cursor: pointer;">
                 <i class="fas fa-heart"></i>
               </div>
-              <div class="header-action">
+              <div class="header-action" onclick="window.location.href='cart.html'" style="cursor: pointer;">
                 <i class="fas fa-shopping-cart"></i>
                 <span class="cart-count">0</span>
               </div>
@@ -100,12 +100,15 @@ href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
         <div class="container">
           <div class="search-container">
             <div class="search-box">
-              <i class="fas fa-search search-icon"></i>
               <input
                 type="text"
                 class="search-input"
                 placeholder="Tìm kiếm điện thoại, laptop, từ khóa..."
               />
+              <i class="fas fa-search search-icon"></i>
+              <button class="search-clear" title="Xóa">
+                <i class="fas fa-times"></i>
+              </button>
             </div>
             <button class="search-btn">
               <i class="fas fa-search"></i> Tìm kiếm
